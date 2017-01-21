@@ -1,0 +1,49 @@
+site_name: Sprytile Docs
+site_description: A tile map editor for Blender
+site_author: Jeiel Aranal
+site_url: https://chemikhazi.itch.io/sprytile
+repo_url: https://github.com/ChemiKhazi/Sprytile
+copyright: Copyright 2016-2017 Jeiel Aranal
+theme_dir: 'mkdocs-material/material'
+
+pages:
+- Home: index.md
+- Quick Start: quick-start.md
+- Topics:
+  - Workflow Concepts: workflow-concepts.md
+  - Paint and Build: paint-mode.md
+  - Tile Grids: tile-grids.md
+- Known Issues: bugs.md
+
+extra_css:
+- 'stylesheets/extra.css'
+
+# Options
+extra:
+  palette:
+    primary: indigo
+    accent: light blue
+  social:
+    - type: github-alt
+      link: https://github.com/chemikhazi
+    - type: twitter
+      link: https://twitter.com/chemikhazi
+
+markdown_extensions:
+  - toc(permalink=true)
+  - markdown.extensions.admonition
+  - markdown.extensions.meta
+  - markdown.extensions.codehilite(guess_lang=false)
+  - markdown.extensions.footnotes
+  - markdown.extensions.meta
+  - markdown.extensions.toc(permalink=true)
+  - pymdownx.betterem(smart_enable=all)
+  - pymdownx.caret
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.tasklist(custom_checkbox=true)
+  - pymdownx.tilde
