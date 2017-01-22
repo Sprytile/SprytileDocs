@@ -7,7 +7,7 @@ A tile map editor addon for Blender
 
 New to Sprytile? Dive in with the [Quick Start](quick-start.md) tutorial.
 
-## In Depth Topics
+## Topics
 
 * [Workflow Concepts](workflow-concepts.md)
 * [Paint Mode](paint-mode.md)

@@ -13,7 +13,7 @@ pages:
   - Workflow Concepts: workflow-concepts.md
   - Paint and Build: paint-mode.md
   - Tile Grids: tile-grids.md
-- Known Issues: bugs.md
+- Issues: bugs.md
 
 extra_css:
 - 'stylesheets/extra.css'
