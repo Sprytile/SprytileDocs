@@ -110,10 +110,22 @@ Looking closely at the last wall we created, we can see that the texture gets ve
 
 ![Wall Small Tiles](img/wall-small-tiles.png)
 
-But even with the smaller tiles, the repetition is still visible. With tile map editors, you can further break up the patterns by rotating and flipping tiles. To do that, we use this part of the Sprytile panel. For convenience, the keyboard shortcuts for rotating tiles left and right are the `1` and `2` keys.
+But even with the smaller tiles, the repetition is still visible. With tile map editors, you can further break up the patterns by rotating and flipping tiles. To do that, we use this part of the Sprytile panel. For convenience, the keyboard shortcuts for rotating tiles left and right are the `1` and `2` keys. The `3` key toggles X tile flip, the `4` key toggles the Y tile flip.
 
 ![Flip/Rotate Panel](img/flip-rotate.png)
 
+![Wall with tile rotations](img/wall-tile-rotation.png)
+
 ## Pixel Grid Translate ##
 
+This wall is placed in an awkward position. Sprytile makes moving faces easier in tile map mode by constraining movement to pixel. Lets select the wall faces and split them by pressing the `Y` key. Now translate the selection by pressing the `G` key. The movement now snaps to the pixel scale and a readout showing the movement is shown on the top left corner.
+
+![Pixel Rotation](img/pixel-translation.png)
+
+The movement is restricted to the global axis of the 3D view direction. Use the pixel translation tool to move the wall to a more sensible place.
+
+![Moving the wall](img/wall-move.png)
+
 ## Paint Tool ##
+
+The final tool for
