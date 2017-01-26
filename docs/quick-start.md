@@ -19,7 +19,11 @@ In Blender, open User Preferences by going to `File > User Preferences`. Go to t
 
     Press the `Save User Settings` button if you want to continue using Sprytile in future Blender sessions without going back to User Preferences
 
-With Sprytile installed, let's start a new Blender file by going to `File > New`. Make sure the tool shelf panel to the left of the 3D view is open. If it is not, press `T` and find the Sprytile tab. If the Sprytile tab is missing, check the installation steps again.
+To make sure Blender shows pixel art textures correctly, we have to turn off mipmaps in 3D view. In the preferences window, switch over to the `System` tab and turn off the Mipmaps option under OpenGL.
+
+![Preferences Mipmaps](img/prefs-mipmap.png)
+
+With Sprytile installed and setup, let's start a new Blender file by going to `File > New`. Make sure the tool shelf panel to the left of the 3D view is open. If it is not, press `T` and find the Sprytile tab. If the Sprytile tab is missing, check the installation steps again.
 
 ## Material Setup ##
 
