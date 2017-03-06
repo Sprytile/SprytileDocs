@@ -187,11 +187,11 @@ Switch to edge selection mode and select one of the cylinder's edges along the l
 
 What hinting does is indicate to Sprytile which side of the face will be aligned to the horizontal axis of the tile map.
 
-The cylinder still doesn't look like our selected tile. To fix this, we can use the stretch options.
+The cylinder still doesn't look like our selected tile. To fix this, we can use the stretch options on the paint tool.
 
 ![Stretch Options](img/stretch-options.png)
 
-With the stretch options on, repeat painting the faces like with the previous step. Now the faces will be UV mapped with the selected tile stretched out over it, looking more like a the metallic pipe of the selected tile.
+With the stretch options on, repeat painting the faces as with the previous step. Now the faces will be UV mapped with the selected tile stretched out over it, looking more like the metallic pipe of the selected tile.
 
 ![Pipe Cylinder](img/pipe-cylinder.png)
 
@@ -199,6 +199,6 @@ With the stretch options on, repeat painting the faces like with the previous st
 
 This tutorial gives an overview of Sprytile's basic functions, hopefully enough to help you to build cool things with it. A video version of this tutorial will be coming soon.
 
-See the individual topic pages for a more in-depth view of Sprytile's functionality.
+For a more in-depth view of Sprytile's functonality, see the individual topic pages.
 
-If you have any questions, feel free to contact me on [twitter](https://twitter.com/chemikhazi) or via the [discussion boards](https://chemikhazi.itch.io/sprytile/community).
+If you have any questions, feel free to contact me on [twitter](https://twitter.com/chemikhazi) or via the [itch.io discussion boards](https://chemikhazi.itch.io/sprytile/community).
