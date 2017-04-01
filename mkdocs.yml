@@ -2,7 +2,8 @@ site_name: Sprytile Docs
 site_description: A tile map editor for Blender
 site_author: Jeiel Aranal
 site_url: https://chemikhazi.itch.io/sprytile
-repo_url: https://github.com/ChemiKhazi/Sprytile
+repo_name: "Sprytile Home"
+repo_url: https://chemikhazi.itch.io/sprytile
 copyright: Copyright 2016-2017 Jeiel Aranal
 theme_dir: 'mkdocs-material/material'
 
@@ -21,10 +22,14 @@ extra_css:
 
 # Options
 extra:
+  features:
+    tabs: false
   palette:
     primary: indigo
     accent: light blue
   social:
+    - type: globe
+      link: https://chemikhazi.itch.io/sprytile
     - type: github-alt
       link: https://github.com/chemikhazi
     - type: twitter
