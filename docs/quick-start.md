@@ -6,6 +6,8 @@ We'll be using the following tile set image for this tutorial, but feel free to 
 
 ![Tile Set](img/tileset.png)
 
+You can also follow along with the [video tutorial](<https://youtu.be/-ezYZgMp-R0>)
+
 ## Installation ##
 
 Download the zip file from the [Sprytile page](https://chemikhazi.itch.io/sprytile).

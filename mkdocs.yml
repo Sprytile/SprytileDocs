@@ -9,6 +9,7 @@ theme_dir: 'mkdocs-material/material'
 pages:
 - Home: index.md
 - Quick Start: quick-start.md
+- Advanced Features: advanced-features.md
 - Topics:
   - Workflow Concepts: workflow-concepts.md
   - Paint and Build: paint-mode.md
