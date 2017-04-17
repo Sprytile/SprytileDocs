@@ -2,13 +2,42 @@
 
 This tutorial covers additional Sprytile features not covered in the quick start guide.
 
+## Work Plane Cursor
+
+A feature that was added to Sprytile recently is the Work Plane Cursor. This is a visual indicator around the Blender cursor which shows the plane you will be painting on.
+
+There are three options for the display of the work plane cursor:
+
+* Off - Hide the work plane cursor.
+* On - Always display the work plane cursor.
+* View - Only show the work plane cursor when the view is changed.
+
+These are accessible in Sprytile's workflow panel. There are additional options for the work plane cursor when the foldout is expanded by pressing the triangle on the left.
+
+* Plane Color - Color of the work plane grid.
+* Plane Size - Size of the work plane. This value will always be multiplied by 2.
+
+![Work Plane Settings](img/work-plane-settings.png)
+
+### Cursor Snap Modes
+
+As covered in the quick start tutorial, holding down the `S` key in tile paint mode snaps Blender's cursor to mesh vertices.
+
+Another snapping mode available is grid snapping. This snaps the cursor to the selected tile grid, centered around the cursor. This lets you move the cursor to positions without existing vertices.
+
+To switch to grid snap mode, you can press the button in the workflow panel.
+
+You can also toggle between snap modes by pressing the `shift` key while holding down `S` to snap the cursor.
+
 ## Paint Panel
+
+This section covers features accessible from Sprytile's paint panel.
 
 ### Building Off Axis
 
-The build tool is not limited to the global X/Y/Z axis. The `Set Normal` button lets you to pick a face normal to use the build tool with.
+The build tool is not limited to the global X/Y/Z axis. The `Set Normal` button lets you to pick a normal to use the build tool with.
 
-Paint ground tiles like shown below, with one tile sticking out, and move the 3D cursor to the indicated vertex.
+Paint ground tiles as shown below, with one tile sticking out, and move the 3D cursor to the indicated vertex.
 
 ![Step 1](img/set-normal-1.png)
 
@@ -17,7 +46,7 @@ Set the pivot point mode to 3D cursor, and rotate the tile that is sticking out 
 ![Step 2](img/set-normal-2.png)
 ![Step 3](img/set-normal-3.png)
 
-In the Sprytile paint tools, press the `Set Normal` button.
+In the Sprytile paint tools, expand the toolbar and press the `Set Normal` button.
 
 ![Step 4](img/set-normal-4.png)
 
@@ -39,7 +68,31 @@ To go back to using the global X/Y/Z axis for the build tool, deselect the `Lock
 
 The `Lock` button can also be pressed without using the `Set Normal` mode.
 
-When pressed, Sprytile's build mode will be locked to the currently view axis, allowing you to change the viewing angle while painting on the same axis.
+When pressed, Sprytile's work plane will be locked to the current axis, allowing you to change the viewing angle while working on a consistent plane.
+
+### Fill Tool
+
+Sprytile can fill large areas by using the fill tool. Expand the tools foldout to access the fill tool. In fill mode, the work plane cursor will always be displayed.
+
+The area that can be filled is determined by the work plane size. This can be configured in the paint tools panel under fill mode.
+
+![Fill Options](img/fill-options.png)
+
+First, switch to fill mode and set the size of your work plane.
+
+Then using grid mode snap, position the work plane cursor to an empty area.
+
+Switch work plane mode to `on` and use the build tool to draw something in the work plane.
+
+![Fill Drawing](img/fill-drawing.png)
+
+Next, pick a different tile and use the fill tool to fill in your drawing.
+
+![Fill Actual](img/fill-actual.png)
+
+Note that the fill tool only works on faces that lie on the work plane grid.
+
+Turning on the `Lock Transforms` fill tool option will preserve any tile flips or rotations of the faces that you fill.
 
 ### Multiple Materials
 
@@ -69,13 +122,23 @@ Expanding `Extra UV Grid Settings` will allow you to change extra options for ea
 
 #### Offset
 
-Offset will change the origin of the tile grid in the tileset texture. This allows for grids of different sizes to be used in one texture without having to find a common denominator.
+Offset changes the origin of the tile grid in the tileset texture. This allows for grids of different sizes to be used in one texture without having to find a common denominator to make the grids fit
 
 #### UV Rotation
 
-This applies a rotation on the tile grids. If you can figure out a cool use for this, let me know!
+Applies a rotation on the tile grids. If you can figure out a cool use for this, let me know!
 
 ## Workflow Panel
+
+These are features that appear in Sprytile's workflow panel.
+
+### Reload All Images
+
+After editing a tile set image in an external editor, press this button to quickly reload the texture file.
+
+Additionally, you can toggle the `auto` button to automatically reload textures every few seconds.
+
+![Workflow Features](img/workflow-features.png)
 
 ### Cursor Flow
 
