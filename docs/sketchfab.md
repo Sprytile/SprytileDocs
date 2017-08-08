@@ -1,12 +1,12 @@
 # Exporting for Sketchfab
 
-These are settings I've found to be a good base for making your low poly pixel art texture models look good in [Sketchfab](https://sketchfab.com/). Think of this as a base, there are additional ways to make presenting your models more eyecatching in Sketchfab!
+These are settings I've found to be a good base for making your low poly pixel art texture models look good in [Sketchfab](https://sketchfab.com/). Think of this as a base, there are additional ways to make presenting your models more eye catching in Sketchfab!
 
 ## Power of Two Textures
 
 If you've read the previous guides, you may know by now how important it is [to have power of two sized textures](creating-tilesets#power-of-two-sizes) for your 3D models, and it is especially important with Sketchfab.
 
-The technology used by Sketchfab to display models is sensitive to sizes and textures will have artifacts no matter how closely you follow the rest of this guide.
+The technology used by Sketchfab to display models is sensitive to sizes and non power of two textures will have artifacts no matter how closely you follow the rest of this guide.
 
 There are workarounds to this limitation if necessary, but it will always result in some artifacts.
 
