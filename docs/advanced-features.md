@@ -4,7 +4,7 @@ This tutorial covers additional Sprytile features not covered in the quick start
 
 ## Work Plane Cursor
 
-A feature that was added to Sprytile recently is the Work Plane Cursor. This is a visual indicator around the Blender cursor which shows the plane you will be painting on.
+The work plane is a visual indicator around the Blender cursor which shows the plane you will be painting on, and the fill area when using the fill tool.
 
 There are three options for the display of the work plane cursor:
 
@@ -15,21 +15,25 @@ There are three options for the display of the work plane cursor:
 These are accessible in Sprytile's workflow panel. There are additional options for the work plane cursor when the foldout is expanded by pressing the triangle on the left.
 
 * Plane Color - Color of the work plane grid.
-* Plane Size - Size of the work plane. This value will always be multiplied by 2.
+* Plane Size - Size of the work plane.
 
 ![Work Plane Settings](img/work-plane-settings.png)
 
-### Cursor Snap Modes
+### Cursor/Work Plane Navigation
 
 As covered in the quick start tutorial, holding down the `S` key in tile paint mode snaps Blender's cursor to mesh vertices.
 
 Another snapping mode available is grid snapping. This snaps the cursor to the selected tile grid, centered around the cursor. This lets you move the cursor to positions without existing vertices.
 
-To switch to grid snap mode, you can press the button in the workflow panel.
+You can change between snapping modes via a toggle in the workflow panel.
+
+![Cursor Snap Toggle](img/cursor-snap-toggle.png)
 
 You can also toggle between snap modes by pressing the `shift` key while holding down `S` to snap the cursor.
 
-## Paint Panel
+While holding down `S`, the work plane can be moved along its axis by scrolling the mouse wheel up or down, letting you easily change layers.
+
+## Sprytile Painter Panel
 
 This section covers features accessible from Sprytile's paint panel.
 
@@ -46,7 +50,7 @@ Set the pivot point mode to 3D cursor, and rotate the tile that is sticking out 
 ![Step 2](img/set-normal-2.png)
 ![Step 3](img/set-normal-3.png)
 
-In the Sprytile paint tools, expand the toolbar and press the `Set Normal` button.
+In the Sprytile paint tools, press the `Set Normal` button on the left most side.
 
 ![Step 4](img/set-normal-4.png)
 
@@ -58,7 +62,7 @@ The axis indicator in the Sprytile panel now shows that it is locked, and Spryti
 
 ![Step 6](img/set-normal-6.png)
 
-Use the build tool. The faces are now being created on the chosen normal.
+With the work plane on, we can see that it is now aligned along the face normal. Use the build tool along this plane.
 
 ![Step 7](img/set-normal-7.png)
 
@@ -70,9 +74,21 @@ The `Lock` button can also be pressed without using the `Set Normal` mode.
 
 When pressed, Sprytile's work plane will be locked to the current axis, allowing you to change the viewing angle while working on a consistent plane.
 
+### Multi tile select
+
+While using Sprytile, you may have noticed that you can select multiple tiles in the UI and build/paint with them. This feature allows for greater flexibility while working with tilesets.
+
+However, this can also generate a lot of vertices which may be undesirable. To address this, there is the Join Multi option.
+
+![Join Multi Option](img/join-multi-option.png)
+
+The join multi option will automatically combine multiple selected tiles into one face, making it easier to cleanup or manage triangle counts.
+
+Using this option should be weighed against having the flexibility of having the smaller tiles to modify later on.
+
 ### Fill Tool
 
-Sprytile can fill large areas by using the fill tool. Expand the tools foldout to access the fill tool. In fill mode, the work plane cursor will always be displayed.
+Sprytile can work with large areas by using the fill tool. In fill mode, the work plane will always be displayed.
 
 The area that can be filled is determined by the work plane size. This can be configured in the paint tools panel under fill mode.
 
@@ -80,7 +96,7 @@ The area that can be filled is determined by the work plane size. This can be co
 
 First, switch to fill mode and set the size of your work plane.
 
-Then using grid mode snap, position the work plane cursor to an empty area.
+Then using grid mode snap, position the work plane to an empty area.
 
 Switch work plane mode to `on` and use the build tool to draw something in the work plane.
 
@@ -116,17 +132,31 @@ There is now a new tile grid entry in Sprytile's tile grid section for the mater
 
 ![New Material](img/new-material-grid.png)
 
-### Additional UV Grid Settings
+### Additional Tile Grid Settings
 
-Expanding `Extra UV Grid Settings` will allow you to change extra options for each tile grid.
+Expanding `Extra UV Grid Settings` will allow you to change advanced options for each tile grid.
+
+![Grid Options](img/uv-grid-settings.png)
 
 #### Offset
 
-Offset changes the origin of the tile grid in the tileset texture. This allows for grids of different sizes to be used in one texture without having to find a common denominator to make the grids fit
+Offset changes the origin of the tile grid in the tileset texture. This allows for grids of different sizes to be used in one texture without having to find a common denominator to make the grids fit.
+
+The origin of the offset is from the lower left corner of the texture.
 
 #### UV Rotation
 
 Applies a rotation on the tile grids. If you can figure out a cool use for this, let me know!
+
+#### Padding
+
+Padding will give each tile a safe area that can be used to [accomodate texture bleeding](https://itch.io/t/72048/suggestion-for-accomodating-bleeding-fix) in certain game engines.
+
+When starting with a 32x32 tile grid, adding a 1x1 padding will automatically change the tile grid to 30x30.
+
+#### Margins
+
+Some existing tileset have spaces between tiles. The margins settings will let you accomodate for these. 
 
 ## Workflow Panel
 
@@ -136,17 +166,9 @@ These are features that appear in Sprytile's workflow panel.
 
 After editing a tile set image in an external editor, press this button to quickly reload the texture file.
 
-Additionally, you can toggle the `auto` button to automatically reload textures every few seconds.
+Additionally, you can toggle the `auto` button to automatically reload textures after they have been edited.
 
 ![Workflow Features](img/workflow-features.png)
-
-### Cursor Flow
-
-While using Sprytile's build tool the 3D cursor will normally stay in place. Turning on cursor flow will make the 3D cursor follow the direction you are building in.
-
-This can be helpful for roughing in structure in an intuitive manner.
-
-![Cursor Flow Demo](img/cursor-flow-demo.gif)
 
 ### Make Double Sided
 

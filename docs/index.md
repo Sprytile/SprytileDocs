@@ -9,8 +9,8 @@ New to Sprytile? Dive in with the [Quick Start](quick-start.md) tutorial.
 
 Got the basics? Move onwards to the [Advanced Features](advanced-features.md) tutorial.
 
-## Topics
+## Guides
 
-* [Workflow Concepts](workflow-concepts.md)
-* [Paint Mode](paint-mode.md)
-* [Tile Grids](tile-grids.md)
+* [Creating Tilesets](creating-tilesets.md)
+* [Using Tilesets](using-tilesets.md)
+* [Sketchfab Export](sketchfab.md)

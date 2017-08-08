@@ -17,15 +17,19 @@ In Blender, open User Preferences by going to `File > User Preferences`. Go to t
 ![Install Addon](img/install-addon.png)
 ![Enable Addon](img/enable-addon.png)
 
-!!! note "Future Uses"
-
-    Press the `Save User Settings` button if you want to continue using Sprytile in future Blender sessions without going back to User Preferences
-
 To make sure Blender shows pixel art textures correctly, we have to turn off mipmaps in 3D view. In the preferences window, switch over to the `System` tab and turn off the Mipmaps option under OpenGL.
 
 ![Preferences Mipmaps](img/prefs-mipmap.png)
 
+Next, make sure that Blender is using the Blender Renderer by going back to the main window and checking the renderer dropdown near the top.
+
+![Blender Renderer](img/renderer-setting.png)
+
 With Sprytile installed and setup, let's start a new Blender file by going to `File > New`. Make sure the tool shelf panel to the left of the 3D view is open. If it is not, press `T` and find the Sprytile tab. If the Sprytile tab is missing, check the installation steps again.
+
+!!! note "Future Uses"
+
+    Press the `Save User Settings` button if you want to continue using Sprytile in future Blender sessions without going back to User Preferences
 
 ## Material Setup ##
 
@@ -33,9 +37,13 @@ Before using the Sprytile tools, the tile set has to be loaded into the material
 
 ![Material Setup](img/setup-material.jpg)
 
-Next, go to the Textures tab in the Properties view and load your tile set image into the material. After loading the image, go back to the Sprytile tab and press `Setup Pixel Texture`.
+Next, go to the Textures tab in the Properties view and load your tile set image into the material.
 
 ![Texture Setup](img/setup-texture.png)
+
+After loading the image, go back to the Sprytile tab and press `Setup Pixel Texture`.
+
+![Texture Button](img/setup-pixel-texture.jpg)
 
 ## Sprytile Tools ##
 
@@ -49,7 +57,7 @@ The majority of Sprytile's tools are accessed under `Edit Mode`. With a mesh obj
 
 !!! tip "Backface Culling"
 
-    It is recommended to turn off backface culling so you can see the direction the faces are being built in.
+    It is recommended to turn off backface culling so you can see the direction the faces are being built in. This is accessible in the right hand panel of the viewport (press 'n' if it is not visible), under the shading foldout.
 
 ## Build Mode ##
 
@@ -65,21 +73,33 @@ Exit tile map mode by pressing the `Build` button again or by pressing the `Esc`
 
 ### Tile Building Workflow ###
 
-Now to get familiar with Sprytile's workflow by building something! First, delete the existing vertices of the selected mesh so we have a blank slate.
+Now to get familiar with Sprytile's workflow by building something!
+
+First, delete the existing vertices of the selected mesh so we have a blank slate. Do this by pressing `a` to select all, and then pressing `x` and selecting `Vertices`.
 
 The workflow of Sprytile revolves around Blender's 3D cursor and the direction the 3D view is facing.
 
 The 3D cursor is the center of the tile grid when you're painting, and the global axis that the view is facing is the surface you will be painting on.
 
-As an example, reorient the 3D view so that it is facing the floor of the file, and then set the 3D cursor to the center by pressing `Shift + S` and selecting `Cursor to Center`.
+Let's start by reseting the 3D cursor to the center of the scene by pressing `Shift + S` and selecting `Cursor to Center`.
 
 ![Paint Prepare](img/paint-prepare.png)
 
-In the tile selection UI, choose the grass tile and paint around the 3D cursor. Notice how the tile grid is centered on the 3D cursor and the painting surface is oriented to the ground.
+With the tile selection UI open, try rotating the 3D view camera around. Hold down the middle mouse button while the mouse cursor is in the 3D view and move the mouse.
+
+![Camera Pan](img/camera-pan.gif)
+
+Notice that a grid appears around the blender 3D cursor. This is called the work plane and indicates the plane that you'll be building on.
+
+By default, the work plane appears when the view camera is panned. If it does not, [check the settings](advanced-features/#work-plane-cursor).
+
+Tilt the camera downwards so that the work plane is aligned to the ground.
+
+In the tile selection UI, choose the grass tile and paint around the 3D cursor. Notice how the tile grid is centered around the 3D cursor and the painted tiles appear on the ground.
 
 ![Paint Z-axis](img/paint-1.png)
 
-Now reorient the 3D view so it is facing one of the side facing global axis. Pick a wall tile and paint with the tile. Notice how the tiles are being created on a grid centered on the 3D cursor but now in a perpendicular direction.
+Now pan the camera up so the work plane is vertical. Pick a wall tile and paint with the tile.
 
 ![Paint Y-axis](img/paint-2.png)
 
@@ -105,7 +125,7 @@ Try reorienting the 3D view to face the last axis you have yet to paint on, then
 
 ### Tile Grids ###
 
-Now that you know how to use Sprytile, let's focus on tile grids. Tile maps might be made up of tiles in different scales. To account for this, Sprytile allows you to paint tiles in different sizes. This part of the Sprytile panel allows you to create and organize the grid settings used in the tile map.
+Now that you know how to use Sprytile, let's focus on tile grids. Tile maps might be made up of tiles in different scales. To account for this, Sprytile allows you to paint tiles in different sizes. This part of the Sprytile panel allows you to create and organize the grid settings used with the tile map.
 
 Press the `+` button at the panel and select the newly created entry. The settings for this new tile grid can be changed in the boxes below. For this tile grid, lets change it to a 16 x 16 tile size.
 
@@ -115,8 +135,6 @@ Press the `+` button at the panel and select the newly created entry. The settin
 You can see that the tile selection UI updates to show the currently selected tile grid as well. You can change the tile grid selection by using the tile grid selector in the tools panel.
 
 You can also change tile grids by holding `Ctrl` with your mouse over the tile selection UI and scrolling the mousewheel up or down.
-
-![Tile Selection Update](img/tile-selection-update.png)
 
 ### Tile Flipping/Rotation ###
 
@@ -128,7 +146,15 @@ But even with the smaller tiles, the repetition is still visible. With tile map 
 
 ![Flip/Rotate Panel](img/flip-rotate.png)
 
-For convenience, the keyboard shortcuts for rotating tiles left and right are the `1` and `2` keys. The `3` key toggles X tile flip, the `4` key toggles the Y tile flip. Repaint the wall using the tile flipping and rotation options.
+The keyboard shortcuts for rotating tiles left and right are the `1` and `2` keys.
+
+The `3` key toggles Flip X and the `4` key toggles Flip Y.
+
+Repaint the wall using the tile flipping and rotation options.
+
+!!! info "Tile Picker"
+
+    You can pick tiles from your scene like in Photoshop. Hold down the `alt` key and select a tile from the scene with a left mouse click.
 
 ![Wall with tile rotations](img/wall-tile-rotation.png)
 
@@ -142,7 +168,7 @@ This wall is placed in an awkward position. Sprytile makes moving faces easier i
 
 ![Pixel Rotation](img/pixel-translation.png)
 
-The movement is restricted to the global axis the 3D view is facing. Use the pixel translation tool to move the wall to a more sensible place. Pixel translate is automatically used when in tile map mode, but can also be invoked manually outside of tile map mode.
+Use the pixel translation tool to move the wall to a more sensible place. The movement is restricted along the work plane, so rotate the 3D view when necessary. Pixel translate is automatically used when in tile map mode.
 
 ![Moving the wall](img/wall-move.png)
 
@@ -156,13 +182,17 @@ Finally, we'll cover paint mode. Paint mode gives you tools to quickly UV map fa
 
 ![Mesh Extrude](img/mesh-extrude.gif)
 
-Next, bring tile map mode into paint mode by pressing the `Paint` button in the Sprytile panel. Using the 32x32 tile grid, select the tile that is the border of the grass and the ground.
+Next, turn on paint mode by pressing the `Paint` button in the Sprytile panel. Using the 32x32 tile grid, select the tile that is the border of the grass and the ground.
 
 ![Paint Mode Selected](img/paint-mode-select.png)
 
-Now try painting the tile on one of the extruded faces. The texture that appears is just the ground because the UV alignment is set to center. Change the alignment to top and try painting the faces again.
+Now try painting the tile on one of the extruded faces. The texture appears stretched because of the current paint settings.
 
-![UV Align Selection](img/uv-align.png)
+![Paint Mode Misalign](img/paint-mode-misalign.png)
+
+Change the paint settings to the following and try painting the faces again.
+
+![Paint Settings](img/paint-settings.jpg)
 
 Now the grass/ground boundary appears because UV mapping of the face is being aligned to the top of the tile. Continue painting the other extruded faces.
 
@@ -179,7 +209,7 @@ Switch to the 16x16 tile grid and select the following tile. Make sure that grid
 
 ![Cylinder Creation](img/create-cylinder.png)
 
-If you try painting the cylinder faces, you will notice that the alignment of the UV is not correct. To fix this, we can use hinting mode. Toggle on hinting in the Sprytile panel.
+If you try painting the outer faces of the cylinder, you will notice that the alignment of the UV is not correct. To fix this, we can use hinting mode. Toggle on hinting in the Sprytile panel.
 
 ![Hinting Toggle](img/hinting-toggle.png)
 
@@ -193,14 +223,14 @@ The cylinder still doesn't look like our selected tile. To fix this, we can use 
 
 ![Stretch Options](img/stretch-options.png)
 
-With the stretch options on, repeat painting the faces as with the previous step. Now the faces will be UV mapped with the selected tile stretched out over it, looking more like the metallic pipe of the selected tile.
+With the stretch options on, repeat painting the faces as with the previous step. Now the faces will be UV mapped with the selected tile stretched out over each face, looking more like the metallic pipe of the selected tile.
 
 ![Pipe Cylinder](img/pipe-cylinder.png)
 
 ## Conclusion ##
 
-This tutorial gives an overview of Sprytile's basic functions, hopefully enough to help you to build cool things with it. A video version of this tutorial will be coming soon.
+This tutorial gives an overview of Sprytile's basic functions, hopefully enough to help you to build cool things with it.
 
-For a more in-depth view of Sprytile's functonality, see the individual topic pages.
+For more advanced uses of Sprytile, check the [Advanced Features](advanced-features) tutorial page.
 
 If you have any questions, feel free to contact me on [twitter](https://twitter.com/chemikhazi) or via the [itch.io discussion boards](https://chemikhazi.itch.io/sprytile/community).

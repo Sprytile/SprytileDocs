@@ -1,21 +1,27 @@
 site_name: Sprytile Docs
 site_description: A tile map editor for Blender
 site_author: Jeiel Aranal
-site_url: https://chemikhazi.itch.io/sprytile
+site_url: http://itch.sprytile.xyz
 repo_name: "Sprytile Home"
-repo_url: https://chemikhazi.itch.io/sprytile
+repo_url: http://itch.sprytile.xyz
 copyright: Copyright 2016-2017 Jeiel Aranal
-theme_dir: 'mkdocs-material/material'
+# theme_dir: 'mkdocs-material/material'
+theme: 'material'
+site_dir: ../SprytilePage
 
 pages:
 - Home: index.md
 - Quick Start: quick-start.md
 - Advanced Features: advanced-features.md
-- Topics:
-  - Workflow Concepts: workflow-concepts.md
-  - Paint and Build: paint-mode.md
-  - Tile Grids: tile-grids.md
-- Issues: bugs.md
+- Guides:
+  - Creating Tilesets: creating-tilesets.md
+  - Using Tilesets: using-tilesets.md
+  - Sketchfab Export: sketchfab.md
+# - Topics:
+#   - Workflow Concepts: workflow-concepts.md
+#   - Paint and Build: paint-mode.md
+#   - Tile Grids: tile-grids.md
+# - Issues: bugs.md
 
 extra_css:
 - 'stylesheets/extra.css'
