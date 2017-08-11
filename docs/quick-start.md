@@ -10,7 +10,7 @@ You can also follow along with the [video tutorial](<https://youtu.be/-ezYZgMp-R
 
 ## Installation ##
 
-Download the zip file from the [Sprytile page](https://chemikhazi.itch.io/sprytile).
+Download the zip file from the [Sprytile page](http://itch.sprytile.xyz).
 
 In Blender, open User Preferences by going to `File > User Preferences`. Go to the Add-ons tab and press  `Install from File` at the bottom of the preference window and navigate to the downloaded zip file. After installation, search for Sprytile under Community addons and enable it.
 
