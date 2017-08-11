@@ -4,9 +4,9 @@ If you're new to Blender, this section of the tutorial will teach enough Blender
 
 Blender is an [opensource 3D software package](https://www.blender.org/) that is free to use. It is incredibly versatile and can handle many 3D tasks but for the purpose of Sprytile, we'll be using it for its 3D modeling capabilities.
 
-Start by [getting the latest recommended version](https://www.blender.org/download/) of Blender from the download page and installing it, do not get the Release Candidate.
+Start by [getting the latest recommended version](https://www.blender.org/download/) of Blender from the download page and installing it. Do not get the Release Candidate.
 
-Start Blender after installation and you will see the following screen. The splash screen artwork may be different depending on the version you installed.
+Run Blender after installation and you will see the following screen. The splash screen artwork may be different depending on the version you installed.
 
 ## Window Areas
 
@@ -30,6 +30,8 @@ The properties panel is used for setting the data for Blender's various componen
 
 ### Outliner
 
+This lists the objects in the 3D scene. Useful when there are multiple objects in the scene.
+
 ## Camera Navigation
 
 Now we'll learn how to move around in the 3D view. This is important to learn as this is how we'll move around while editing the scene.
@@ -38,29 +40,49 @@ Now we'll learn how to move around in the 3D view. This is important to learn as
 
 	If you do not have a middle mouse button, follow the [instructions in this video](https://www.youtube.com/watch?v=qdqEYfSb6t8) to enable three button mouse emulation, and add holding down the `Alt` key to the following instructions.
 
-When you want to move around in 3D view, your mouse cursor must start from inside the 3D view. Releasing the middle mouse button will stop moving the 3D view.
+When you want to move around in 3D view, the mouse cursor must start from inside the 3D view before holding down the middle mouse button. Releasing the middle mouse button will stop moving the 3D view.
 
 ### Rotation/Panning
 
-Hold down the middle mouse button and move the mouse around.
+Hold down the `middle mouse` button and move the mouse around. This rotates the view around a focus point. The focus point discussed later in the tutorial.
 
-Notice that the camera rotates around a focus point.
+### Horizontal/Vertical
 
-### Horizontal/Vertical Movement
+1. Hold down the `Shift` key
+2. Hold down the `middle mouse` button
+3. Move the mouse around
 
-Press and hold down the `Shift` key and then hold down the middle mouse button.
+This moves the camera along horizontal and vertical axis that the camera is facing.
 
-Moving the mouse will now move the camera along horizontal and vertical axis that the camera is facing.
+### Forward/Backward
 
-### Forward/Backward Movement
+1. Hold down the `Ctrl` key
+2. Hold down the `middle mouse` button
+3. Move the mouse up and down
 
-This time, press and hold down the `Ctrl` key before holding down middle mouse.
+When the mouse is moved upwards, the camera moves forward towards the direction it is facing, and reverses when the mouse moves down.
 
-Moving the mouse now moves the camera forwards and backwards from the direction the camera is facing.
+### Orthogonal Views
+
+It sometimes useful to view the scene from the top, side, or front views. These are called orthogonal views, and can easily be accessed from Blender by using the number pad, the grid of numbers on the right side of the keyboard.
+
+* `Numpad 1`: Front view
+* `Numpad 3`: Right view
+* `Numpad 7`: Top view
+
+Holding `Ctrl` and pressing the above numbers will give a view from the opposite side.
+
+If your keyboard does not have a numpad, or are looking for a supported alternative workflow check out the officially supported [Pie Menu Addon](https://www.youtube.com/watch?v=ioYWPmnhNtY).
+
+### Orthographic Toggle
+
+Pressing `Numpad 5` will toggle between orthographic and perspective projection.
+
+Orthographic projection will draw the 3D view without perspective and foreshortening, which may be useful for lining up objects in the scene or getting a clearer sense of the use of space in the scene.
 
 ---
 
-Practice these camera moves until you're comfortable moving around the 3D view.
+Practice moving the 3D view around until you're comfortable with it. Being able to navigate in 3D easily is important when working in 3D.
 
 ## Working with Objects
 
@@ -68,11 +90,16 @@ Practice these camera moves until you're comfortable moving around the 3D view.
 
 ### Transformation
 
-## Modes
+#### 3D Manipulator
+
+#### Shortcut Keys
+
+## Context Modes
 
 ## 3D Cursor
 
 ## Useful Shortcuts
 
-* Tab
-* Shift Space
+* `Tab` - Toggle context mode
+* `Numpad Del` - Focus 3D view on selection
+* `Shift Space` - Focus window on view
