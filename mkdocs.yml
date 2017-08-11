@@ -16,6 +16,7 @@ pages:
   - Introduction: tutorial/tutorial-intro.md
   - Blender Basics: tutorial/blender-basics.md
   - Installation: tutorial/install.md
+  - Tilesets: tutorial/tilesets.md
 - Advanced Features: advanced-features.md 
 - Guides:
   - Creating Tilesets: creating-tilesets.md
