@@ -1,6 +1,6 @@
 # Sprytile Documentation
 
-<img src="img/sprytile-logo-4x.png" style="image-rendering: pixelated;">
+<img src="img/sprytile-logo-4x.png" style="image-rendering: crisp-edges;">
 
 A tile map editor addon for Blender
 
