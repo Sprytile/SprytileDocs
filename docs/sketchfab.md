@@ -20,7 +20,7 @@ Just [install the Blender exporter](https://sketchfab.com/exporters/blender) and
 
 Once you've exported your model from Blender to Sketchfab, go to the sketchfab website in your browser and edit the 3D settings for your model.
 
-![Sketchfab Settings](img/sketchfab-settings.jpg)
+![Sketchfab Settings](img/sketchfab-settings.png)
 
 First, set the renderer and shading type to Classic and Shadeless respectively.
 
