@@ -6,7 +6,7 @@ repo_name: "Sprytile Home"
 repo_url: http://itch.sprytile.xyz
 copyright: Copyright 2016-2017 Jeiel Aranal
 theme: 'material'
-site_dir: ../SprytilePage
+site_dir: ../DocBuild
 
 pages:
 - Home: index.md
