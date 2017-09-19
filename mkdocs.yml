@@ -5,7 +5,6 @@ site_url: http://docs.sprytile.xyz
 repo_name: "Sprytile Home"
 repo_url: http://itch.sprytile.xyz
 copyright: Copyright 2016-2017 Jeiel Aranal
-# theme_dir: 'mkdocs-material/material'
 theme: 'material'
 site_dir: ../SprytilePage
 
@@ -17,6 +16,7 @@ pages:
   - Blender Basics: tutorial/blender-basics.md
   - Installation: tutorial/install.md
   - Tilesets: tutorial/tilesets.md
+  - Sprytile Basics: tutorial/sprytile-basics.md
 - Advanced Features: advanced-features.md 
 - Guides:
   - Creating Tilesets: creating-tilesets.md

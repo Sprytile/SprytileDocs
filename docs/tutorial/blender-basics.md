@@ -2,7 +2,7 @@
 
 If you're new to Blender, this section of the tutorial will teach enough Blender basics to confidently use Sprytile.
 
-Blender is an [opensource 3D software package](https://www.blender.org/) that is free to use. It is incredibly versatile and can handle many 3D tasks but for the purpose of Sprytile, we'll be using it for its 3D modeling capabilities.
+Blender is an [opensource 3D software package](https://www.blender.org/) that is free to use. It is incredibly versatile and can handle many 3D tasks. For the purpose of Sprytile, we'll be using it for its 3D modeling capabilities.
 
 Start by [getting the latest recommended version](https://www.blender.org/download/) of Blender from the download page and installing it. Do not get the Release Candidate.
 
@@ -64,7 +64,7 @@ When the mouse is moved upwards, the camera moves forward towards the direction 
 
 ### Orthogonal Views
 
-It sometimes useful to view the scene from the top, side, or front views. These are called orthogonal views, and can easily be accessed from Blender by using the number pad, the grid of numbers on the right side of the keyboard.
+It's sometimes useful to view the scene from the top, side, or front views. These are called orthogonal views, and can easily be accessed from Blender by using the number pad, the grid of numbers on the right side of the keyboard.
 
 * `Numpad 1`: Front view
 * `Numpad 3`: Right view
