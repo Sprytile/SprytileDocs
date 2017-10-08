@@ -18,7 +18,7 @@
       
         <link rel="shortcut icon" href="../assets/images/favicon.png">
       
-      <meta name="generator" content="mkdocs-0.16.1, mkdocs-material-1.8.0">
+      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.10.1">
     
     
       
@@ -26,12 +26,12 @@
       
     
     
-      <script src="../assets/javascripts/modernizr-1df76c4e58.js"></script>
+      <script src="../assets/javascripts/modernizr-e826f8942a.js"></script>
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application-bfecc7305d.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application-a20f419c8e.css">
       
-        <link rel="stylesheet" href="../assets/stylesheets/application-02c2a4388f.palette.css">
+        <link rel="stylesheet" href="../assets/stylesheets/application-23f75ab9c7.palette.css">
       
     
     
@@ -69,10 +69,11 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        
-          <a href="http://docs.sprytile.xyz" title="Sprytile Docs" class="md-icon md-icon--home md-header-nav__button">
-          </a>
-        
+        <a href="http://docs.sprytile.xyz" title="Sprytile Docs" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon md-icon--home"></i>
+          
+        </a>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
         <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
@@ -97,7 +98,7 @@
     <form class="md-search__form" name="search">
       <input type="text" class="md-search__input" name="query" required placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
       <label class="md-icon md-search__icon" for="search"></label>
-      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">close</button>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">&#xE5CD;</button>
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
@@ -148,9 +149,11 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="drawer">
-    
-      <i class="md-icon md-icon--home md-nav__button"></i>
-    
+    <div class="md-nav__button md-logo">
+      
+        <i class="md-icon md-icon--home"></i>
+      
+    </div>
     Sprytile Docs
   </label>
   
@@ -224,8 +227,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#material-setup" title="Material Setup" class="md-nav__link">
-    Material Setup
+  <a href="#material-and-tileset-setup" title="Material and Tileset Setup" class="md-nav__link">
+    Material and Tileset Setup
   </a>
   
 </li>
@@ -414,8 +417,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#material-setup" title="Material Setup" class="md-nav__link">
-    Material Setup
+  <a href="#material-and-tileset-setup" title="Material and Tileset Setup" class="md-nav__link">
+    Material and Tileset Setup
   </a>
   
 </li>
@@ -529,13 +532,13 @@
 <p class="admonition-title">Future Uses</p>
 <p>Press the <code>Save User Settings</code> button if you want to continue using Sprytile in future Blender sessions without going back to User Preferences</p>
 </div>
-<h2 id="material-setup">Material Setup<a class="headerlink" href="#material-setup" title="Permanent link">&para;</a></h2>
-<p>Before using the Sprytile tools, the tile set has to be loaded into the material. With a mesh object selected, go to the Materials tab in the Properties View, then press <code>Set Material to Shadeless</code> in the Sprytile panel.</p>
-<p><img alt="Material Setup" src="../img/setup-material.jpg" /></p>
-<p>Next, go to the Textures tab in the Properties view and load your tile set image into the material.</p>
-<p><img alt="Texture Setup" src="../img/setup-texture.png" /></p>
-<p>After loading the image, go back to the Sprytile tab and press <code>Setup Pixel Texture</code>.</p>
-<p><img alt="Texture Button" src="../img/setup-pixel-texture.jpg" /></p>
+<h2 id="material-and-tileset-setup">Material and Tileset Setup<a class="headerlink" href="#material-and-tileset-setup" title="Permanent link">&para;</a></h2>
+<p>Before using the Sprytile tools, the tile set has to be loaded into the material. With a mesh selected in object mode, go to the Sprytile panel and press <code>Load Tileset</code>. Choose the tileset texture here and the material and texture are automatically setup and ready to go.</p>
+<p><img alt="Load Tileset" src="../img/load-tileset.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">Pixel art material</p>
+<p>The material setup here is for pixel art style textures. Advanced users of Blender may want to modify the material for other purposes.</p>
+</div>
 <h2 id="sprytile-tools">Sprytile Tools<a class="headerlink" href="#sprytile-tools" title="Permanent link">&para;</a></h2>
 <p>The majority of Sprytile's tools are accessed under <code>Edit Mode</code>. With a mesh object selected, enter edit mode and open the tool shelf to the Sprytile tab. Press <code>T</code> to open the tool shelf if it is hidden from the left of the 3D view. Expand the tool shelf if it is too cramped.</p>
 <p><img alt="Sprytile Edit Tools" src="../img/edit-tool-shelf.png" /></p>
@@ -733,7 +736,7 @@ cylinder and rotate it so it is not aligned to the global XYZ axis.</p>
       
     </div>
     
-      <script src="../assets/javascripts/application-1d6ee6ee6c.js"></script>
+      <script src="../assets/javascripts/application-f3ab9e5ff8.js"></script>
       
       
       <script>app.initialize({url:{base:".."}})</script>
