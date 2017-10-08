@@ -31,19 +31,15 @@ With Sprytile installed and setup, let's start a new Blender file by going to `F
 
     Press the `Save User Settings` button if you want to continue using Sprytile in future Blender sessions without going back to User Preferences
 
-## Material Setup ##
+## Material and Tileset Setup ##
 
-Before using the Sprytile tools, the tile set has to be loaded into the material. With a mesh object selected, go to the Materials tab in the Properties View, then press `Set Material to Shadeless` in the Sprytile panel.
+Before using the Sprytile tools, the tile set has to be loaded into the material. With a mesh selected in object mode, go to the Sprytile panel and press `Load Tileset`. Choose the tileset texture here and the material and texture are automatically setup and ready to go.
 
-![Material Setup](img/setup-material.jpg)
+![Load Tileset](img/load-tileset.png)
 
-Next, go to the Textures tab in the Properties view and load your tile set image into the material.
+!!! note "Pixel art material"
 
-![Texture Setup](img/setup-texture.png)
-
-After loading the image, go back to the Sprytile tab and press `Setup Pixel Texture`.
-
-![Texture Button](img/setup-pixel-texture.jpg)
+    The material setup here is for pixel art style textures. Advanced users of Blender may want to modify the material for other purposes.
 
 ## Sprytile Tools ##
 
