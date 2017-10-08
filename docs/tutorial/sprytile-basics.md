@@ -4,6 +4,8 @@ We'll now go into the basic steps of using Sprytile. If you're new to Blender, y
 
 ## Material Setup
 
+The first thing we need to do is to setup the material
+
 ## Tile Grid
 
 ## Build Tool

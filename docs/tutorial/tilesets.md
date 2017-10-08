@@ -1,6 +1,10 @@
 # Tilesets and Sprytile
 
-Before getting started with using Sprytile, we'll discuss limitations to be aware of when creating or using textures for 3D.
+Before starting to use Sprytile we'll discuss tilesets, which are an important concept for Sprytile.
+
+Tilesets are image files containing multiple tiles. In old games, these were used to build 2D levels. In Sprytile, we use the same concept but to build in 3D.
+
+You can either create a tileset from scratch or use existing asset packs. Either way, you should be aware of some limitations with using images as textures in 3D. 
 
 ## Power of Two textures
 
@@ -12,8 +16,7 @@ In the simplest terms, power of two sizes means that textures should have widths
 
 	**8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096**
 
-Textures do not have to be square but can be any combination of the above sizes, for example 32x64.
-
+Textures do not have to be square but can be any combination of the above sizes, for example 32x64. 
 The technical reasons for using power of two sizes is beyond the scope of this tutorial, but certain 3D engines may have rendering artifacts when using Non Power of Two (**NPOT**) textures.
 
 Blender's internal rendering engine is capable of handling NPOT textures, but if you plan on using your creations outside Blender it is safer to start with Power of Two sizes for your tilesets.

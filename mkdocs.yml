@@ -14,8 +14,8 @@ pages:
 - Tutorial:
   - Introduction: tutorial/tutorial-intro.md
   - Blender Basics: tutorial/blender-basics.md
-  - Installation: tutorial/install.md
-  - Tilesets: tutorial/tilesets.md
+  - Installing Sprytile: tutorial/install.md
+  - Tilesets and Assets: tutorial/tilesets.md
   - Sprytile Basics: tutorial/sprytile-basics.md
 - Advanced Features: advanced-features.md 
 - Guides:
