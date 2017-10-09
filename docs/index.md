@@ -1,5 +1,6 @@
 # Sprytile Documentation
-![Logo](img/sprytile-logo-4x.png)
+
+<img src="img/sprytile-logo-4x.png" style="image-rendering: crisp-edges;">
 
 Sprytile is an add on for [Blender](https://www.blender.org/) that lets you use 2D tiles to build 3D scenes.
 

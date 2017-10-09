@@ -164,9 +164,9 @@ These are features that appear in Sprytile's workflow panel.
 
 ### Reload All Images
 
-After editing a tile set image in an external editor, press this button to quickly reload the texture file.
+After editing a tileset image in an external editor, press this button to reload the texture file in Blender.
 
-Additionally, you can toggle the `auto` button to automatically reload textures after they have been edited.
+Additionally, you can toggle the `Auto` button to automatically reload textures after they have been edited.
 
 ![Workflow Features](img/workflow-features.png)
 
