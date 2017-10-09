@@ -22,11 +22,11 @@ The window used to interact with the 3D scene we're working with. This where we'
 
 Technically part of the 3D view, the tool shelf is a convenient place for Blender's various tools. It is also where we'll interact with Sprytile's tools when Sprytile is installed.
 
-If the tool shelf disappears while you're working with Blender, press the `T` key while your mouse is in 3D view to show it again.
+If the tool shelf disappears while you're working with Blender, press the `T` key while your mouse is over the 3D view to show it again.
 
 ### Properties View
 
-The properties panel is used for setting the data for Blender's various components. For Sprytile, we'll only be concerned with the Material and Texture tabs.
+The properties panel is used for setting the data for Blender's various components. We will not use this with Sprytile but it is useful to know where it is.
 
 ### Outliner
 
@@ -38,15 +38,15 @@ Now we'll learn how to move around in the 3D view. This is important to learn as
 
 !!! note "No Middle Mouse Button?"
 
-	If you do not have a middle mouse button, follow the [instructions in this video](https://www.youtube.com/watch?v=qdqEYfSb6t8) to enable three button mouse emulation, and add holding down the `Alt` key to the following instructions.
+	If you do not have a middle mouse button, follow the [instructions in this video](https://www.youtube.com/watch?v=qdqEYfSb6t8) to enable three button mouse emulation, and hold down the `Alt` key in the following instructions.
 
 When you want to move around in 3D view, the mouse cursor must start from inside the 3D view before holding down the middle mouse button. Releasing the middle mouse button will stop moving the 3D view.
 
 ### Rotation/Panning
 
-Hold down the `middle mouse` button and move the mouse around. This rotates the view around a focus point. The focus point discussed later in the tutorial.
+Hold down the `middle mouse` button and move the mouse around. This rotates the view around a focus point. The focus point will be discussed later in the tutorial.
 
-### Horizontal/Vertical
+### Horizontal/Vertical Movement
 
 1. Hold down the `Shift` key
 2. Hold down the `middle mouse` button
@@ -54,17 +54,17 @@ Hold down the `middle mouse` button and move the mouse around. This rotates the 
 
 This moves the camera along horizontal and vertical axis that the camera is facing.
 
-### Forward/Backward
+### Forward/Backward Movement
 
 1. Hold down the `Ctrl` key
 2. Hold down the `middle mouse` button
 3. Move the mouse up and down
 
-When the mouse is moved upwards, the camera moves forward towards the direction it is facing, and reverses when the mouse moves down.
+When the mouse is moved upwards, the camera moves forward towards the direction it is facing, and reverses when the mouse is moved down.
 
 ### Orthogonal Views
 
-It's sometimes useful to view the scene from the top, side, or front views. These are called orthogonal views, and can easily be accessed from Blender by using the number pad, the grid of numbers on the right side of the keyboard.
+It's sometimes useful to view the scene from the top, side, or front views. These are called orthogonal views and can easily be accessed from Blender by using the number pad, the grid of numbers on the right side of the keyboard.
 
 * `Numpad 1`: Front view
 * `Numpad 3`: Right view
@@ -72,7 +72,7 @@ It's sometimes useful to view the scene from the top, side, or front views. Thes
 
 Holding `Ctrl` and pressing the above numbers will give a view from the opposite side.
 
-If your keyboard does not have a numpad, or are looking for a supported alternative workflow check out the officially supported [Pie Menu Addon](https://www.youtube.com/watch?v=ioYWPmnhNtY).
+If your keyboard does not have a number pad, or are looking for a supported alternative workflow check out the officially supported [Pie Menu Addon](https://www.youtube.com/watch?v=ioYWPmnhNtY).
 
 ### Orthographic Toggle
 

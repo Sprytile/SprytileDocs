@@ -10,7 +10,7 @@ In Blender, open User Preferences by going to `File > User Preferences`. Go to t
 
 ![Install Addon](../img/install-addon.png)
 
-## Settings Setup
+## Settings Changes
 
 We now need to make some changes to the Blender settings after installing Sprytile.
 
@@ -22,10 +22,13 @@ To make sure Blender shows pixel art textures correctly, we have to turn off mip
 
 ![Preferences Mipmaps](../img/prefs-mipmap.png)
 
+!!! note
+
+	If you are not using Sprytile for pixel art style textures, you may skip this step. If you will be using Blender for non pixel art textured purposes in the future, remember to turn Mipmaps back on in the settings.
+
 We're now done with installing Sprytile and changing the settings to be optimal for pixel art style textures.
 
 ## Save User Settings
 
 Before closing the preferences window, make sure to press the `Save User Settings` button on the bottom left corner to make sure that our new settings are saved for the next time Blender is opened.
 
-If you will be using Blender for non pixel art textured purposes in the future, remember to turn Mipmaps back on in the settings.
