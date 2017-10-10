@@ -13,6 +13,7 @@ pages:
 - Home: index.md
 - Quick Start: quick-start.md
 - Advanced Features: advanced-features.md
+- Updating Sprytie: updating-sprytile.md
 - Guides:
   - Creating Tilesets: creating-tilesets.md
   - Using Tilesets: using-tilesets.md
