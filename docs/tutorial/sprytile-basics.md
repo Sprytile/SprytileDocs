@@ -56,13 +56,11 @@ Exit tile map mode by pressing the `Build` button again or by pressing the `Esc`
 
 ### Tile Mapping
 
-Let's familiarize ourselves with Sprytile's workflow by creating something.
+Let's familiarize ourselves with Sprytile's by building something.
 
 First, delete the existing vertices of the selected mesh so we have a blank slate. Do this by pressing `a` to select all, and then pressing `x` and selecting `Vertices`.
 
-The workflow of Sprytile revolves around Blender's 3D cursor and the direction the 3D view is facing.
-
-The 3D cursor is the center of the tile grid when you're painting, and the global axis that the view is facing is the surface you will be painting on.
+Sprytile's workflow revolves around Blender's 3D cursor and the direction the 3D view is facing. The 3D cursor is the center of the tile grid when you're painting, and the global axis that the view is facing is the surface you will be painting on.
 
 Let's start by reseting the 3D cursor to the center of the scene by pressing `Shift + S` and selecting `Cursor to Center`.
 
@@ -102,20 +100,48 @@ Try reorienting the 3D view to face the last axis you have yet to paint on, then
 
 ### Tile Grids
 
-Now that you know how to build with Sprytile, let's focus on tile grids. Tilesets might be made up of tiles in different scales. To account for this, Sprytile allows you to work with grids of different sizes. This part of the Sprytile panel allows you to create and organize the grid settings used with the tile map.
+Now that you know how to build with Sprytile, let's focus on tile grids. Tilesets might be made up of tiles in different scales. To account for this, Sprytile allows you to work with grids of different sizes. This part of the Sprytile panel allows you to create and organize the tile grids.
 
 Press the `+` button at the panel and select the newly created entry. The settings for this new tile grid can be changed in the boxes below. For this tile grid, lets change it to a 16 x 16 tile size.
 
 ![Tile Grid Panel](../img/tile-grid-panel.png)
 ![Tile Grid Editing](../img/tile-grid-edit.png)
 
+You can see that the tile selection UI updates to show the currently selected tile grid as well. You can choose the tile grid settings being used by using the tile grid selector in the tools panel.
+
+You can also change tile grids by holding `Ctrl` with your mouse over the tile selection UI and scrolling the mousewheel up or down.
+
 ### Flip/Rotate Tiles
 
-## Poly Management
+Looking closely at the last wall we created, we can see that the texture gets very repetitive. Delete part of that wall and recreate the wall using the 16x16 tile grid. By using the smaller grid, we can break up the pattern created by the larger tile size.
+
+![Wall Small Tiles](../img/wall-small-tiles.png)
+
+But even with the smaller tiles, the repetition is still visible. With tile mapping, you can further break up the patterns by rotating and flipping tiles. To do that, we use this part of the Sprytile panel.
+
+![Flip/Rotate Panel](../img/flip-rotate.png)
+
+The keyboard shortcuts for rotating tiles left and right are the `1` and `2` keys.
+
+The `3` key toggles Flip X and the `4` key toggles Flip Y.
+
+Rebuild the wall using the tile flipping and rotation options. You can also select multiple tiles to build with by drag selecting in the tile selection UI.
+
+### Picking Tiles
+
+You can also pick tiles directly from your scene like in Photoshop. Hold down the `alt` key and select a tile from the scene with a left mouse click.
+
+## Vertex Management
+
+Building models with a tiles may generate more vertices than is strictly needed. Sprytile has options to manage vertices, but using them may give you less flexibility. Keep these options in mind when constructing your models with Sprytile.
 
 ### Auto Merge
 
+The `Auto Merge` option will automatically join the vertices between tiles. When using this option, you will not be able to as quickly move individual tiles around after building with them.
+
 ### Join Multi
+
+The `Join Multi` option helps when using the multi tile selection. Without this option, the tiles that are created will be made up of multiple faces. With Join Multi on, the build tool will only create one face.
 
 ## Paint Tool
 
