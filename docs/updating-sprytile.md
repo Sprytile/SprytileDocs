@@ -8,7 +8,7 @@ In the Add-ons search, type `Sprytile` and expand the Sprytile Painter entry.
 
 ![Sprytile Preferences](img/addon-prefs.png)
 
-Scroll down tho the Updater Settings and press the button marked `Check now for sprytile update`
+Scroll down to the Updater Settings and press the button marked `Check now for sprytile update`
 
 ![Update Addon](img/addon-update.png)
 
