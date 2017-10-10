@@ -18,6 +18,7 @@ pages:
   - Tilesets and Assets: tutorial/tilesets.md
   - Sprytile Basics: tutorial/sprytile-basics.md
 - Advanced Features: advanced-features.md 
+- Updating Sprytie: updating-sprytile.md
 - Guides:
   - Creating Tilesets: creating-tilesets.md
   - Using Tilesets: using-tilesets.md
