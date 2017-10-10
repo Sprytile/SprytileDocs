@@ -10,7 +10,7 @@
         <meta name="description" content="A tile map editor for Blender">
       
       
-        <link rel="canonical" href="http://docs.sprytile.xyz/creating-tilesets/">
+        <link rel="canonical" href="http://docs.sprytile.xyz/updating-sprytile/">
       
       
         <meta name="author" content="Jeiel Aranal">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Creating Tilesets - Sprytile Docs</title>
+        <title>Updating Sprytie - Sprytile Docs</title>
       
     
     
@@ -83,12 +83,8 @@
           
             
               
-                <span class="md-header-nav__parent">
-                  Guides
-                </span>
-              
             
-            Creating Tilesets
+            Updating Sprytie
           
         </span>
       </div>
@@ -219,11 +215,20 @@
       
       
 
+  
 
-  <li class="md-nav__item">
-    <a href="../updating-sprytile/" title="Updating Sprytie" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+    <a href="./" title="Updating Sprytie" class="md-nav__link md-nav__link--active">
       Updating Sprytie
     </a>
+    
   </li>
 
     
@@ -231,12 +236,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
     
     <label class="md-nav__link" for="nav-5">
       Guides
@@ -252,54 +255,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="toc">
-        Creating Tilesets
-      </label>
-    
-    <a href="./" title="Creating Tilesets" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../creating-tilesets/" title="Creating Tilesets" class="md-nav__link">
       Creating Tilesets
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#power-of-two-sizes" title="Power of Two Sizes" class="md-nav__link">
-    Power of Two Sizes
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#high-resolution-tilesets" title="High Resolution Tilesets" class="md-nav__link">
-    High Resolution Tilesets
-  </a>
-  
-</li>
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -349,27 +309,6 @@
     
   
   
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#power-of-two-sizes" title="Power of Two Sizes" class="md-nav__link">
-    Power of Two Sizes
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#high-resolution-tilesets" title="High Resolution Tilesets" class="md-nav__link">
-    High Resolution Tilesets
-  </a>
-  
-</li>
-      
-      
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -381,21 +320,15 @@
               
                 
                 
-                <h1 id="creating-tilesets">Creating Tilesets<a class="headerlink" href="#creating-tilesets" title="Permanent link">&para;</a></h1>
-<p>These are high level guidelines for creating tilesets and is not a tutorial for how to create tile sets.</p>
-<h2 id="power-of-two-sizes">Power of Two Sizes<a class="headerlink" href="#power-of-two-sizes" title="Permanent link">&para;</a></h2>
-<p>Blender and Sprytile are working with 3D models and thus have the limitations associated with 3D.</p>
-<p>One of these limitations is the recommendation that textures should be in <strong>Power of Two</strong> sizes.</p>
-<p>In the simplest terms, power of two sizes means that textures should have widths and heights that are any of the following pixel sizes:</p>
-<div class="admonition note">
-<p class="admonition-title">Power of Two Sizes</p>
-<p><strong>8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096</strong></p>
-</div>
-<p>While Blender's own renderer can handle non Power of Two textures, many real time renderers may have issues with using non Power of Two textures which can lead to a blurry look.</p>
-<p>It is highly recommended to stick to these sizes when creating tilesets for use with Sprytile.</p>
-<p>If you wish to find out more about the technical details of power of two textures, this is a <a href="https://www.katsbits.com/tutorials/textures/make-better-textures-correct-size-and-power-of-two.php">good primer</a> to read.</p>
-<h2 id="high-resolution-tilesets">High Resolution Tilesets<a class="headerlink" href="#high-resolution-tilesets" title="Permanent link">&para;</a></h2>
-<p>While theoretically possible, high resolution tiles sets have not been tested yet. There is a high likelihood that you will need to use <a href="../advanced-features/#additional-tile-grid-settings">advanced tile grid settings</a> and use padding to <a href="https://itch.io/t/72048/suggestion-for-accomodating-bleeding-fix">avoid texture bleeding</a>.</p>
+                <h1 id="updating-sprytile">Updating Sprytile<a class="headerlink" href="#updating-sprytile" title="Permanent link">&para;</a></h1>
+<p>Sprytile is undergoing continuous development and updates are released on a regular basis. Sprytile uses the <a href="https://github.com/CGCookie/blender-addon-updater">Blender addon updater</a> to help keep your installation updated.</p>
+<p>To update Sprytile, open Blender's User Preferences window (<code>File &gt; User Preferences</code>) and switch to the Add-ons tab.</p>
+<p>In the Add-ons search, type <code>Sprytile</code> and expand the Sprytile Painter entry.</p>
+<p><img alt="Sprytile Preferences" src="../img/addon-prefs.png" /></p>
+<p>Scroll down tho the Updater Settings and press the button marked <code>Check now for sprytile update</code></p>
+<p><img alt="Update Addon" src="../img/addon-update.png" /></p>
+<p>Press this button and a check will be made for a new version. If there is an update, this button will change to allow you to update to the latest version.</p>
+<p>Press the update button and the latest version of Sprytile will be downloaded and installed automatically. Restart Blender when you are prompted to do so by the updater and the latest version will be installed when you open Blender next.</p>
                 
                   
                 
@@ -414,7 +347,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../updating-sprytile/" title="Updating Sprytie" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../advanced-features/" title="Advanced Features" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -423,19 +356,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Updating Sprytie
+                Advanced Features
               </span>
             </div>
           </a>
         
         
-          <a href="../using-tilesets/" title="Using Tilesets" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../creating-tilesets/" title="Creating Tilesets" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Using Tilesets
+                Creating Tilesets
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
