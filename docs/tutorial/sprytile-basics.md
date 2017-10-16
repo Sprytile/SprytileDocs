@@ -133,7 +133,7 @@ You can also pick tiles directly from your scene like in Photoshop. Hold down th
 
 ## Vertex Management
 
-Building models with a tiles may generate more vertices than is strictly needed. Sprytile has options to manage vertices, but using them may give you less flexibility. Keep these options in mind when constructing your models with Sprytile.
+Building models with a tiles may generate more vertices than is strictly needed. Sprytile has options to manage vertices, but using them may give you less flexibility. Keep these options in mind when building your models with Sprytile.
 
 ### Auto Merge
 
