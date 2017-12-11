@@ -6,6 +6,10 @@ Tilesets are image files containing multiple tile sprites. In old games, these w
 
 You can either create a tileset from scratch or use existing asset packs. Either way, you should be aware of some limitations with using images as textures in 3D. 
 
+!!!note "Textures"
+
+	When working in 3D, image files are called textures.
+
 ## Power of Two Texture Sizes
 
 When working with textures in 3D, it is recommended that textures should be in **Power of Two** sizes.
