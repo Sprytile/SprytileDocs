@@ -2,17 +2,26 @@
 
 We'll now go into the basic steps of using Sprytile. If you're new to Blender, you might want to read the [Blender basics tutorial](blender-basics.md) first.
 
-We'll be using the following tileset image for this tutorial, but feel free to use your own tileset to follow along. Either download the tileset below or grab another tileset before continuing.
+By the end of this tutorial, we'll have:
+
+* Created a simple 3D house using 2D tiles
+* Familiarized ourselves with the Sprytile workflow.
+
+We'll be using the following tileset image for this tutorial, save the image to your drive to follow along.
+
+Note that this tileset is 128x128 pixels and follows the [power of two technical requirement](tutorial/tilesets) for textures in 3D.
 
 ![Tile Set](../img/tileset.png)
 
-For this tutorial, we'll start over from a new Blender scene. Open Blender and you will see the default scene. If you already have Blender open, you may want to go to `File>New` to start over with a new scene. 
+For this tutorial, we'll start over from a new Blender scene. Open Blender and you will see the default scene. If you already have Blender open, you may want to go to `File>New` to start over with a new scene.
 
 Make sure that the mesh object selected by right clicking on the cube in the scene. Now check that Blender is in Object Mode and go to the Sprytile tab in the tool shelf.
 
 ## Tileset Setup
 
 The first thing we need to do is to setup the material and load the tileset texture into Blender. With the cube mesh object selected, go to the Sprytile tab, press the `Load Tileset` button under Material Setup.
+
+![Load Tileset](../img/load-tileset.png)
 
 Choose the texture of the tileset in the file selector that pops up and the material and texture will automatically be setup, ready for use with Sprytile.
 
@@ -27,10 +36,6 @@ The majority of Sprytile's tools are accessed under Blender's `Edit Mode`. With 
 If you do not see the tool shelf in the left of the 3D view, press `T` to show the tool shelf. Expand the tool shelf if it is too cramped. 
 
 ![Sprytile Edit Tools](../img/edit-tool-shelf.png)
-
-!!! tip "World Pixel Density"
-
-    If you're not using the provided tile set, you might want to change the world pixel density setting. This sets how many pixels fit inside one Blender unit. The provided tile set is based around 32x32 pixel tiles.
 
 !!! tip "Backface Culling"
 
