@@ -2,6 +2,8 @@
 
 This is a short tutorial on how to install and use Sprytile, an open source tile map editor addon for Blender.
 
+This tutorial is meant for users who are already familiar with Blender. If you're new to Blender and 3D, you can follow the [more indepth tutorial](tutorial/tutorial-intro).
+
 We'll be using the following tile set image for this tutorial, but feel free to use your own tileset to follow along.
 
 ![Tile Set](img/tileset.png)
