@@ -1,10 +1,10 @@
 # Blender Basics
 
-If you're new to Blender, this section of the tutorial will teach enough Blender basics to confidently use Sprytile.
+If you're new to Blender, this section of the tutorial will teach the Blender basics to confidently use Sprytile.
 
-Blender is an [opensource 3D software package](https://www.blender.org/) that is free to use. It is incredibly versatile and can handle many 3D tasks. For the purpose of Sprytile, we'll be using it for its 3D modeling capabilities.
+Blender is an [open source 3D software package](https://www.blender.org/) that is free to use. It is incredibly versatile and can handle many 3D tasks. For Sprytile, we'll be using it for its 3D modeling capabilities.
 
-Start by [getting the latest recommended version](https://www.blender.org/download/) of Blender from the download page and installing it. Do not get the Release Candidate.
+Start by [getting the latest recommended version](https://www.blender.org/download/) of Blender from the download page and installing it. Don't download a Release Candidate.
 
 Run Blender after installation and you will see the following screen. The splash screen artwork may be different depending on the version you installed.
 
@@ -64,13 +64,13 @@ When the mouse is moved upwards, the camera moves forward towards the direction 
 
 ### Orthogonal Views
 
-It's sometimes useful to view the scene from the top, side, or front views. These are called orthogonal views and can easily be accessed from Blender by using the number pad, the grid of numbers on the right side of the keyboard.
+It's sometimes useful to view the scene from the top, side, or front view. These are called orthogonal views and can easily be accessed from Blender by using the number pad, the grid of numbers on the right side of the keyboard.
 
 * `Numpad 1`: Front view
 * `Numpad 3`: Right view
 * `Numpad 7`: Top view
 
-Holding `Ctrl` and pressing the above numbers will give a view from the opposite side.
+Holding `Ctrl` and pressing the above keys will give a view from the opposite side.
 
 If your keyboard does not have a number pad, or are looking for a supported alternative workflow check out the officially supported [Pie Menu Addon](https://www.youtube.com/watch?v=ioYWPmnhNtY).
 
@@ -86,15 +86,28 @@ Practice moving the 3D view around until you're comfortable with it. Being able 
 
 ## Working with Objects
 
+Now we'll learn how to edit objects in Blender.
+
 ### Selection
 
+Blender's starting scene contains a cube mesh, a camera, and a lamp. Each of these are different kinds of objects inside Blender. 
+
+By default, the cube mesh is selected. You can tell this by the outline around the cube, or the by the circle selected indicator in the scene outliner.
+
+Let's try selecting the camera by `right clicking` on the triangular object to the left of the scene. The camera is now highlighted in the 3D view and the scene outliner.
+
 ### Transformation
+
 
 #### 3D Manipulator
 
 #### Shortcut Keys
 
 ## Context Modes
+
+### Object Mode
+
+### Edit Mode
 
 ## 3D Cursor
 
