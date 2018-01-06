@@ -9,9 +9,9 @@ By the end of this tutorial, we'll have:
 
 We'll be using the following tileset image for this tutorial, save the image to your drive to follow along.
 
-Note that this tileset is 128x128 pixels and follows the [power of two technical requirement](tutorial/tilesets) for textures in 3D.
-
 ![Tile Set](../img/tileset.png)
+
+Note that this tileset is 128x128 pixels and follows the [power of two technical requirement](/tutorial/tilesets) for textures in 3D.
 
 For this tutorial, we'll start over from a new Blender scene. Open Blender and you will see the default scene. If you already have Blender open, you may want to go to `File>New` to start over with a new scene.
 
@@ -43,9 +43,15 @@ If you do not see the tool shelf in the left of the 3D view, press `T` to show t
 
 ### Reset Sprytile
 
-Before going further, Sprytile is still new software and you may encounter some bugs. If you experience a crash, try to `Reset Sprytile` under the utilities dropdown.
+Before going further, note that you may encounter bugs with Sprytile. If you experience a crash, try to `Reset Sprytile` under the utilities dropdown.
 
 ![Reset](../img/reset-sprytile.png)
+
+## Four Walls
+
+## Stay Grounded
+
+## A Roof Above
 
 ## Build Tool
 
