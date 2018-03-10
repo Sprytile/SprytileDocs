@@ -7,7 +7,7 @@ By the end of this tutorial, we'll have:
 * Created a simple 3D house using 2D tiles
 * Familiarized ourselves with the Sprytile workflow.
 
-We'll be using the following tileset image for this tutorial, save the image to your drive to follow along.
+We'll be using the following tileset image for this tutorial, save the image to your computer to follow along.
 
 ![Tile Set](../img/tileset.png)
 
@@ -49,9 +49,27 @@ Before going further, note that you may encounter bugs with Sprytile. If you exp
 
 ## Four Walls
 
-## Stay Grounded
+Let's familiarize ourselves with Sprytile by building the walls of the house.
 
-## A Roof Above
+First, delete the existing vertices of the selected mesh so we have a blank slate. Do this by pressing `a` to select all, and then pressing `x` and selecting `Vertices`. Make sure that Blender is in `Edit Mode` when doing this.
+
+We'll now use Sprytile's build tool to create the four walls of the house.
+
+Open Sprytile's **tile map mode** by pressing the `Build` button.
+
+The tile selection UI appears on the lower right corner of the 3D view to show that **tile map mode** is active.
+
+![Tile map mode](../img/tile-map-mode.png)
+
+Exit tile map mode by pressing the `Build` button again or by pressing the `Esc` key. Pressing `Ctrl + Shift + Space` on the keyboard will activate tile map mode again.
+
+!!! note "Tile Selection UI"
+
+    The tile selection UI lets you pick the tile you will be painting with. Zoom the UI by hovering over it and scrolling your mouse wheel up or down.
+
+## And a Roof
+
+## Stay Grounded
 
 ## Build Tool
 
