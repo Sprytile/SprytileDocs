@@ -14,10 +14,12 @@ pages:
 - Quick Start: quick-start.md
 - Advanced Features: advanced-features.md
 - Updating Sprytie: updating-sprytile.md
+- Keyboard Shortcuts: shortcuts.md
 - Guides:
   - Creating Tilesets: creating-tilesets.md
   - Using Tilesets: using-tilesets.md
   - Sketchfab Export: sketchfab.md
+  - Unity Settings: unity-settings.md
 # - Topics:
 #   - Workflow Concepts: workflow-concepts.md
 #   - Paint and Build: paint-mode.md
