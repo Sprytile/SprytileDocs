@@ -10,7 +10,7 @@
         <meta name="description" content="A tile map editor for Blender">
       
       
-        <link rel="canonical" href="http://docs.sprytile.xyz/sketchfab/">
+        <link rel="canonical" href="http://docs.sprytile.xyz/shortcuts/">
       
       
         <meta name="author" content="Jeiel Aranal">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Sketchfab Export - Sprytile Docs</title>
+        <title>Keyboard Shortcuts - Sprytile Docs</title>
       
     
     
@@ -83,12 +83,8 @@
           
             
               
-                <span class="md-header-nav__parent">
-                  Guides
-                </span>
-              
             
-            Sketchfab Export
+            Keyboard Shortcuts
           
         </span>
       </div>
@@ -231,11 +227,20 @@
       
       
 
+  
 
-  <li class="md-nav__item">
-    <a href="../shortcuts/" title="Keyboard Shortcuts" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+    <a href="./" title="Keyboard Shortcuts" class="md-nav__link md-nav__link--active">
       Keyboard Shortcuts
     </a>
+    
   </li>
 
     
@@ -243,12 +248,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
     
     <label class="md-nav__link" for="nav-6">
       Guides
@@ -288,68 +291,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="toc">
-        Sketchfab Export
-      </label>
-    
-    <a href="./" title="Sketchfab Export" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../sketchfab/" title="Sketchfab Export" class="md-nav__link">
       Sketchfab Export
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#power-of-two-textures" title="Power of Two Textures" class="md-nav__link">
-    Power of Two Textures
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#export-to-sketchfab" title="Export To Sketchfab" class="md-nav__link">
-    Export To Sketchfab
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sketchfab-3d-settings" title="Sketchfab 3D Settings" class="md-nav__link">
-    Sketchfab 3D Settings
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#non-power-of-two-workaround" title="Non Power of Two Workaround" class="md-nav__link">
-    Non Power of Two Workaround
-  </a>
-  
-</li>
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -387,41 +333,6 @@
     
   
   
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#power-of-two-textures" title="Power of Two Textures" class="md-nav__link">
-    Power of Two Textures
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#export-to-sketchfab" title="Export To Sketchfab" class="md-nav__link">
-    Export To Sketchfab
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sketchfab-3d-settings" title="Sketchfab 3D Settings" class="md-nav__link">
-    Sketchfab 3D Settings
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#non-power-of-two-workaround" title="Non Power of Two Workaround" class="md-nav__link">
-    Non Power of Two Workaround
-  </a>
-  
-</li>
-      
-      
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -433,30 +344,57 @@
               
                 
                 
-                <h1 id="exporting-for-sketchfab">Exporting for Sketchfab<a class="headerlink" href="#exporting-for-sketchfab" title="Permanent link">&para;</a></h1>
-<p>These are settings I've found to be a good base for making your low poly pixel art texture models look good in <a href="https://sketchfab.com/">Sketchfab</a>. Think of this as a base, there are additional ways to make presenting your models more eye catching in Sketchfab!</p>
-<h2 id="power-of-two-textures">Power of Two Textures<a class="headerlink" href="#power-of-two-textures" title="Permanent link">&para;</a></h2>
-<p>If you've read the previous guides, you may know by now how important it is <a href="../creating-tilesets#power-of-two-sizes">to have power of two sized textures</a> for your 3D models, and it is especially important with Sketchfab.</p>
-<p>The technology used by Sketchfab to display models is sensitive to sizes and non power of two textures will have artifacts no matter how closely you follow the rest of this guide.</p>
-<p>There are workarounds to this limitation if necessary, but it will always result in some artifacts.</p>
-<h2 id="export-to-sketchfab">Export To Sketchfab<a class="headerlink" href="#export-to-sketchfab" title="Permanent link">&para;</a></h2>
-<p>Sketchfab has an exporter for Blender that can easily upload your work from inside Blender.</p>
-<p>Just <a href="https://sketchfab.com/exporters/blender">install the Blender exporter</a> and <a href="https://blog.sketchfab.com/guest-post-blender-to-sketchfab-tutorial/">follow the export tutorial</a>.</p>
-<h2 id="sketchfab-3d-settings">Sketchfab 3D Settings<a class="headerlink" href="#sketchfab-3d-settings" title="Permanent link">&para;</a></h2>
-<p>Once you've exported your model from Blender to Sketchfab, go to the sketchfab website in your browser and edit the 3D settings for your model.</p>
-<p><img alt="Sketchfab Settings" src="../img/sketchfab-settings.png" /></p>
-<p>First, set the renderer and shading type to Classic and Shadeless respectively.</p>
-<p><img alt="Sketchfab Rendering" src="../img/sketchfab-renderer.jpg" /></p>
-<p>Next, go to the Materials tab, and in the diffuse settings expand the dropdown to get to texture settings. Set filtering to <code>Nearest</code>, format to <code>RGB</code>, and both wrap settings to <code>Repeat</code></p>
-<p><img alt="Sketchfab Diffuse" src="../img/sketchfab-diffuse.jpg" /></p>
-<p>Next, scroll down to the transparency settings and set it to <code>Blending</code>, with the slider turned all the way down to zero.</p>
-<p><img alt="Sketchfab Transparency" src="../img/sketchfab-transparency.jpg" /></p>
-<p>And finally, expand the dropdown in the transparency to get to the alpha texture settings. Set filtering to <code>Nearest</code>, the format to <code>Alpha</code>, and both wrap settings to <code>Repeat</code></p>
-<p><img alt="Sketchfab Alpha" src="../img/sketchfab-alpha.jpg" /></p>
-<hr />
-<p>These settings provide a good base for the low poly pixel art style of 3D. You can experiment with the how you present your models by playing with the <a href="https://blog.sketchfab.com/tuning-sketchfab-post-processing/">post processing effects on Sketchfab</a>, or even trying out animations.</p>
-<h2 id="non-power-of-two-workaround">Non Power of Two Workaround<a class="headerlink" href="#non-power-of-two-workaround" title="Permanent link">&para;</a></h2>
-<p>If your texture cannot be power of two, one thing you can do is to scale up the texture by 2x, 3x, or 4x in an image editor. This will result in a larger texture, but may hide some of the artifacts caused by smaller non power of two sized textures.</p>
+                <h1 id="keyboard-shortcuts">Keyboard Shortcuts<a class="headerlink" href="#keyboard-shortcuts" title="Permanent link">&para;</a></h1>
+<table>
+<thead>
+<tr>
+<th align="center">Key</th>
+<th align="left">Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong>1</strong></td>
+<td align="left">Rotate tile left</td>
+</tr>
+<tr>
+<td align="center"><strong>2</strong></td>
+<td align="left">Rotate tile right</td>
+</tr>
+<tr>
+<td align="center"><strong>3</strong></td>
+<td align="left">Flip tile horizontally</td>
+</tr>
+<tr>
+<td align="center"><strong>4</strong></td>
+<td align="left">Flip tile vertically</td>
+</tr>
+<tr>
+<td align="center"><strong>W</strong></td>
+<td align="left">Center viewport on cursor</td>
+</tr>
+<tr>
+<td align="center"><strong>S</strong></td>
+<td align="left">Snap cursor to mouse. Snapping location will depend on cursor snap mode</td>
+</tr>
+<tr>
+<td align="center"><strong>Shift, while holding S</strong></td>
+<td align="left">Toggle cursor snap mode. The cursor snaps towards the mouse, either to the nearest vertex or the nearest world grid coordinate</td>
+</tr>
+<tr>
+<td align="center"><strong>Mousewheel up/down, while holding S</strong></td>
+<td align="left">Move cursor towards to or away from camera</td>
+</tr>
+<tr>
+<td align="center"><strong>Alt + Left Mouse, while over mesh</strong></td>
+<td align="left">Eyedrop select tile from mesh. Configurable in Sprytile settings</td>
+</tr>
+<tr>
+<td align="center"><strong>Ctrl, in tile palette</strong></td>
+<td align="left">Move tile selection in palette. Configurable in Sprytile settings</td>
+</tr>
+</tbody>
+</table>
                 
                   
                 
@@ -475,7 +413,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../using-tilesets/" title="Using Tilesets" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../updating-sprytile/" title="Updating Sprytie" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -484,19 +422,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Using Tilesets
+                Updating Sprytie
               </span>
             </div>
           </a>
         
         
-          <a href="../unity-settings/" title="Unity Settings" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../creating-tilesets/" title="Creating Tilesets" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Unity Settings
+                Creating Tilesets
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

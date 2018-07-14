@@ -186,6 +186,16 @@
             "title": "Updating Sprytile"
         },
         {
+            "location": "/shortcuts/",
+            "text": "Keyboard Shortcuts\n\u00b6\n\n\n\n\n\n\n\n\nKey\n\n\nAction\n\n\n\n\n\n\n\n\n\n\n1\n\n\nRotate tile left\n\n\n\n\n\n\n2\n\n\nRotate tile right\n\n\n\n\n\n\n3\n\n\nFlip tile horizontally\n\n\n\n\n\n\n4\n\n\nFlip tile vertically\n\n\n\n\n\n\nW\n\n\nCenter viewport on cursor\n\n\n\n\n\n\nS\n\n\nSnap cursor to mouse. Snapping location will depend on cursor snap mode\n\n\n\n\n\n\nShift, while holding S\n\n\nToggle cursor snap mode. The cursor snaps towards the mouse, either to the nearest vertex or the nearest world grid coordinate\n\n\n\n\n\n\nMousewheel up/down, while holding S\n\n\nMove cursor towards to or away from camera\n\n\n\n\n\n\nAlt + Left Mouse, while over mesh\n\n\nEyedrop select tile from mesh. Configurable in Sprytile settings\n\n\n\n\n\n\nCtrl, in tile palette\n\n\nMove tile selection in palette. Configurable in Sprytile settings",
+            "title": "Keyboard Shortcuts"
+        },
+        {
+            "location": "/shortcuts/#keyboard-shortcuts",
+            "text": "Key  Action      1  Rotate tile left    2  Rotate tile right    3  Flip tile horizontally    4  Flip tile vertically    W  Center viewport on cursor    S  Snap cursor to mouse. Snapping location will depend on cursor snap mode    Shift, while holding S  Toggle cursor snap mode. The cursor snaps towards the mouse, either to the nearest vertex or the nearest world grid coordinate    Mousewheel up/down, while holding S  Move cursor towards to or away from camera    Alt + Left Mouse, while over mesh  Eyedrop select tile from mesh. Configurable in Sprytile settings    Ctrl, in tile palette  Move tile selection in palette. Configurable in Sprytile settings",
+            "title": "Keyboard Shortcuts"
+        },
+        {
             "location": "/creating-tilesets/",
             "text": "Creating Tilesets\n\u00b6\n\n\nThese are high level guidelines for creating tilesets and is not a tutorial for how to create tile sets.\n\n\nPower of Two Sizes\n\u00b6\n\n\nBlender and Sprytile are working with 3D models and thus have the limitations associated with 3D.\n\n\nOne of these limitations is the recommendation that textures should be in \nPower of Two\n sizes.\n\n\nIn the simplest terms, power of two sizes means that textures should have widths and heights that are any of the following pixel sizes:\n\n\n\n\nPower of Two Sizes\n\n\n8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096\n\n\n\n\nWhile Blender's own renderer can handle non Power of Two textures, many real time renderers may have issues with using non Power of Two textures which can lead to a blurry look.\n\n\nIt is highly recommended to stick to these sizes when creating tilesets for use with Sprytile.\n\n\nIf you wish to find out more about the technical details of power of two textures, this is a \ngood primer\n to read.\n\n\nHigh Resolution Tilesets\n\u00b6\n\n\nWhile theoretically possible, high resolution tiles sets have not been tested yet. There is a high likelihood that you will need to use \nadvanced tile grid settings\n and use padding to \navoid texture bleeding\n.",
             "title": "Creating Tilesets"
@@ -254,6 +264,31 @@
             "location": "/sketchfab/#non-power-of-two-workaround",
             "text": "If your texture cannot be power of two, one thing you can do is to scale up the texture by 2x, 3x, or 4x in an image editor. This will result in a larger texture, but may hide some of the artifacts caused by smaller non power of two sized textures.",
             "title": "Non Power of Two Workaround"
+        },
+        {
+            "location": "/unity-settings/",
+            "text": "Models created with Sprytile are compatible with the \nUnity3D game engine\n, but need to use certain settings to achieve a specific look.\n\n\nThese settings should be considered starting points for your projects, you should experiment with these to make your game visuals unique.\n\n\nRetro/Pixel Art\n\u00b6\n\n\nWhen using low res pixelart tilesets we'll can use the settings below for textures, materials and rendering to achieve that old school look.\n\n\nTexture\n\u00b6\n\n\nTextures should be set to the following settings:\n\n\n\n\nGenerate Mip Maps: Off\n\n\nFilter Mode: Point (no filter)\n\n\n\n\n\n\nMaterial\n\u00b6\n\n\nWhen importing a \n.blend\n file into Unity, a material asset will be created for each material in the Blender scene.\n\n\nMaterials decide how your mesh will be rendered. The simplest Unity material to use is the Unlit Transparent texture, which\nwill render your models similar to how you see it in Blender. However, this material cannot be affected by lights.\n\n\n\n\nIf you'd like to use lighting in your scenes, you can use the Standard shader set to the cutout rendering mode. This material can be a bit more complex to work with, but can be lit in interesting ways.\n\n\n\n\nCamera and Anti Aliasing Settings\n\u00b6\n\n\nYou may notice seams appearing in the textures of your models in Unity. The easiest way to fix this is to turn off anti-aliasing in the camera or quality settings of your project.\n\n\nTo disable anti-aliasing in the camera, select your camera object and turn off Allow MSAA.\n\n\n\n\nTo turn off anti-aliasing in the project level, open the project quality settings by going to \nEdit > Project Settings > Quality\n. In every quality level, disable anti-aliasing.",
+            "title": "Unity Settings"
+        },
+        {
+            "location": "/unity-settings/#retropixel-art",
+            "text": "When using low res pixelart tilesets we'll can use the settings below for textures, materials and rendering to achieve that old school look.",
+            "title": "Retro/Pixel Art"
+        },
+        {
+            "location": "/unity-settings/#texture",
+            "text": "Textures should be set to the following settings:   Generate Mip Maps: Off  Filter Mode: Point (no filter)",
+            "title": "Texture"
+        },
+        {
+            "location": "/unity-settings/#material",
+            "text": "When importing a  .blend  file into Unity, a material asset will be created for each material in the Blender scene.  Materials decide how your mesh will be rendered. The simplest Unity material to use is the Unlit Transparent texture, which\nwill render your models similar to how you see it in Blender. However, this material cannot be affected by lights.   If you'd like to use lighting in your scenes, you can use the Standard shader set to the cutout rendering mode. This material can be a bit more complex to work with, but can be lit in interesting ways.",
+            "title": "Material"
+        },
+        {
+            "location": "/unity-settings/#camera-and-anti-aliasing-settings",
+            "text": "You may notice seams appearing in the textures of your models in Unity. The easiest way to fix this is to turn off anti-aliasing in the camera or quality settings of your project.  To disable anti-aliasing in the camera, select your camera object and turn off Allow MSAA.   To turn off anti-aliasing in the project level, open the project quality settings by going to  Edit > Project Settings > Quality . In every quality level, disable anti-aliasing.",
+            "title": "Camera and Anti Aliasing Settings"
         }
     ]
 }

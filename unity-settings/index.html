@@ -10,7 +10,7 @@
         <meta name="description" content="A tile map editor for Blender">
       
       
-        <link rel="canonical" href="http://docs.sprytile.xyz/sketchfab/">
+        <link rel="canonical" href="http://docs.sprytile.xyz/unity-settings/">
       
       
         <meta name="author" content="Jeiel Aranal">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Sketchfab Export - Sprytile Docs</title>
+        <title>Unity Settings - Sprytile Docs</title>
       
     
     
@@ -88,7 +88,7 @@
                 </span>
               
             
-            Sketchfab Export
+            Unity Settings
           
         </span>
       </div>
@@ -288,6 +288,18 @@
           
           
 
+
+  <li class="md-nav__item">
+    <a href="../sketchfab/" title="Sketchfab Export" class="md-nav__link">
+      Sketchfab Export
+    </a>
+  </li>
+
+        
+          
+          
+          
+
   
 
 
@@ -295,52 +307,54 @@
     
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
     
-      
-    
     
       <label class="md-nav__link md-nav__link--active" for="toc">
-        Sketchfab Export
+        Unity Settings
       </label>
     
-    <a href="./" title="Sketchfab Export" class="md-nav__link md-nav__link--active">
-      Sketchfab Export
+    <a href="./" title="Unity Settings" class="md-nav__link md-nav__link--active">
+      Unity Settings
     </a>
     
       
 <nav class="md-nav md-nav--secondary">
   
   
-    
-  
   
     <label class="md-nav__title" for="toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#power-of-two-textures" title="Power of Two Textures" class="md-nav__link">
-    Power of Two Textures
+  <a href="#retropixel-art" title="Retro/Pixel Art" class="md-nav__link">
+    Retro/Pixel Art
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#texture" title="Texture" class="md-nav__link">
+    Texture
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#export-to-sketchfab" title="Export To Sketchfab" class="md-nav__link">
-    Export To Sketchfab
+        
+          <li class="md-nav__item">
+  <a href="#material" title="Material" class="md-nav__link">
+    Material
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#sketchfab-3d-settings" title="Sketchfab 3D Settings" class="md-nav__link">
-    Sketchfab 3D Settings
+        
+          <li class="md-nav__item">
+  <a href="#camera-and-anti-aliasing-settings" title="Camera and Anti Aliasing Settings" class="md-nav__link">
+    Camera and Anti Aliasing Settings
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#non-power-of-two-workaround" title="Non Power of Two Workaround" class="md-nav__link">
-    Non Power of Two Workaround
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -350,18 +364,6 @@
   
 </nav>
     
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../unity-settings/" title="Unity Settings" class="md-nav__link">
-      Unity Settings
-    </a>
   </li>
 
         
@@ -384,37 +386,41 @@
 <nav class="md-nav md-nav--secondary">
   
   
-    
-  
   
     <label class="md-nav__title" for="toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#power-of-two-textures" title="Power of Two Textures" class="md-nav__link">
-    Power of Two Textures
+  <a href="#retropixel-art" title="Retro/Pixel Art" class="md-nav__link">
+    Retro/Pixel Art
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#texture" title="Texture" class="md-nav__link">
+    Texture
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#export-to-sketchfab" title="Export To Sketchfab" class="md-nav__link">
-    Export To Sketchfab
+        
+          <li class="md-nav__item">
+  <a href="#material" title="Material" class="md-nav__link">
+    Material
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#sketchfab-3d-settings" title="Sketchfab 3D Settings" class="md-nav__link">
-    Sketchfab 3D Settings
+        
+          <li class="md-nav__item">
+  <a href="#camera-and-anti-aliasing-settings" title="Camera and Anti Aliasing Settings" class="md-nav__link">
+    Camera and Anti Aliasing Settings
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#non-power-of-two-workaround" title="Non Power of Two Workaround" class="md-nav__link">
-    Non Power of Two Workaround
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -433,30 +439,32 @@
               
                 
                 
-                <h1 id="exporting-for-sketchfab">Exporting for Sketchfab<a class="headerlink" href="#exporting-for-sketchfab" title="Permanent link">&para;</a></h1>
-<p>These are settings I've found to be a good base for making your low poly pixel art texture models look good in <a href="https://sketchfab.com/">Sketchfab</a>. Think of this as a base, there are additional ways to make presenting your models more eye catching in Sketchfab!</p>
-<h2 id="power-of-two-textures">Power of Two Textures<a class="headerlink" href="#power-of-two-textures" title="Permanent link">&para;</a></h2>
-<p>If you've read the previous guides, you may know by now how important it is <a href="../creating-tilesets#power-of-two-sizes">to have power of two sized textures</a> for your 3D models, and it is especially important with Sketchfab.</p>
-<p>The technology used by Sketchfab to display models is sensitive to sizes and non power of two textures will have artifacts no matter how closely you follow the rest of this guide.</p>
-<p>There are workarounds to this limitation if necessary, but it will always result in some artifacts.</p>
-<h2 id="export-to-sketchfab">Export To Sketchfab<a class="headerlink" href="#export-to-sketchfab" title="Permanent link">&para;</a></h2>
-<p>Sketchfab has an exporter for Blender that can easily upload your work from inside Blender.</p>
-<p>Just <a href="https://sketchfab.com/exporters/blender">install the Blender exporter</a> and <a href="https://blog.sketchfab.com/guest-post-blender-to-sketchfab-tutorial/">follow the export tutorial</a>.</p>
-<h2 id="sketchfab-3d-settings">Sketchfab 3D Settings<a class="headerlink" href="#sketchfab-3d-settings" title="Permanent link">&para;</a></h2>
-<p>Once you've exported your model from Blender to Sketchfab, go to the sketchfab website in your browser and edit the 3D settings for your model.</p>
-<p><img alt="Sketchfab Settings" src="../img/sketchfab-settings.png" /></p>
-<p>First, set the renderer and shading type to Classic and Shadeless respectively.</p>
-<p><img alt="Sketchfab Rendering" src="../img/sketchfab-renderer.jpg" /></p>
-<p>Next, go to the Materials tab, and in the diffuse settings expand the dropdown to get to texture settings. Set filtering to <code>Nearest</code>, format to <code>RGB</code>, and both wrap settings to <code>Repeat</code></p>
-<p><img alt="Sketchfab Diffuse" src="../img/sketchfab-diffuse.jpg" /></p>
-<p>Next, scroll down to the transparency settings and set it to <code>Blending</code>, with the slider turned all the way down to zero.</p>
-<p><img alt="Sketchfab Transparency" src="../img/sketchfab-transparency.jpg" /></p>
-<p>And finally, expand the dropdown in the transparency to get to the alpha texture settings. Set filtering to <code>Nearest</code>, the format to <code>Alpha</code>, and both wrap settings to <code>Repeat</code></p>
-<p><img alt="Sketchfab Alpha" src="../img/sketchfab-alpha.jpg" /></p>
-<hr />
-<p>These settings provide a good base for the low poly pixel art style of 3D. You can experiment with the how you present your models by playing with the <a href="https://blog.sketchfab.com/tuning-sketchfab-post-processing/">post processing effects on Sketchfab</a>, or even trying out animations.</p>
-<h2 id="non-power-of-two-workaround">Non Power of Two Workaround<a class="headerlink" href="#non-power-of-two-workaround" title="Permanent link">&para;</a></h2>
-<p>If your texture cannot be power of two, one thing you can do is to scale up the texture by 2x, 3x, or 4x in an image editor. This will result in a larger texture, but may hide some of the artifacts caused by smaller non power of two sized textures.</p>
+                  <h1>Unity Settings</h1>
+                
+                <p>Models created with Sprytile are compatible with the <a href="https://unity3d.com/">Unity3D game engine</a>, but need to use certain settings to achieve a specific look.</p>
+<p>These settings should be considered starting points for your projects, you should experiment with these to make your game visuals unique.</p>
+<h2 id="retropixel-art">Retro/Pixel Art<a class="headerlink" href="#retropixel-art" title="Permanent link">&para;</a></h2>
+<p>When using low res pixelart tilesets we'll can use the settings below for textures, materials and rendering to achieve that old school look.</p>
+<h3 id="texture">Texture<a class="headerlink" href="#texture" title="Permanent link">&para;</a></h3>
+<p>Textures should be set to the following settings:</p>
+<ul>
+<li>Generate Mip Maps: Off</li>
+<li>Filter Mode: Point (no filter)</li>
+</ul>
+<p><img alt="Texture Settings" src="../img/unity-tex-settings.png" /></p>
+<h3 id="material">Material<a class="headerlink" href="#material" title="Permanent link">&para;</a></h3>
+<p>When importing a <code>.blend</code> file into Unity, a material asset will be created for each material in the Blender scene.</p>
+<p>Materials decide how your mesh will be rendered. The simplest Unity material to use is the Unlit Transparent texture, which
+will render your models similar to how you see it in Blender. However, this material cannot be affected by lights.</p>
+<p><img alt="Unlit Material" src="../img/unity-unlit-mat.png" /></p>
+<p>If you'd like to use lighting in your scenes, you can use the Standard shader set to the cutout rendering mode. This material can be a bit more complex to work with, but can be lit in interesting ways.</p>
+<p><img alt="Standard Material" src="../img/unity-standard-mat.png" /></p>
+<h3 id="camera-and-anti-aliasing-settings">Camera and Anti Aliasing Settings<a class="headerlink" href="#camera-and-anti-aliasing-settings" title="Permanent link">&para;</a></h3>
+<p>You may notice seams appearing in the textures of your models in Unity. The easiest way to fix this is to turn off anti-aliasing in the camera or quality settings of your project.</p>
+<p>To disable anti-aliasing in the camera, select your camera object and turn off Allow MSAA.</p>
+<p><img alt="Camera Settings" src="../img/unity-cam-settings.png" /></p>
+<p>To turn off anti-aliasing in the project level, open the project quality settings by going to <code>Edit &gt; Project Settings &gt; Quality</code>. In every quality level, disable anti-aliasing.</p>
+<p><img alt="Quality Settings" src="../img/unity-quality-settings.png" /></p>
                 
                   
                 
@@ -475,7 +483,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../using-tilesets/" title="Using Tilesets" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../sketchfab/" title="Sketchfab Export" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -484,25 +492,11 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Using Tilesets
+                Sketchfab Export
               </span>
             </div>
           </a>
         
-        
-          <a href="../unity-settings/" title="Unity Settings" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
-                  Next
-                </span>
-                Unity Settings
-              </span>
-            </div>
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
-            </div>
-          </a>
         
       </nav>
     </div>
