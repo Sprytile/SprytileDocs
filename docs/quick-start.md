@@ -2,9 +2,11 @@
 
 This is a short tutorial on how to use Sprytile **v0.5.2**, with Blender **2.9**. This also applies to Blender version 2.8.
 
+This is not meant to teach beginners Blender basics, but will try to be as accomodating as possible.
+
 We'll be using the following tile set image for this tutorial, but feel free to use your own tileset to follow along.
 
-!!! note "tileset.png"
+!!! example "tileset.png"
     <div style="align: center; width: 100%;">
     [![tileset.png](img/tileset.png)<br/>*Click to download*](img/tileset.png)
     </div>
@@ -30,13 +32,15 @@ Download the zip file from the [itch.io page](https://chemikhazi.itch.io/sprytil
 
         There are preferences in the addon tab that you may want to change, according to your own workflow. You can always come back to these preferences when you figure out what works for you.
 
+---
+
 ## Starting Sprytile
 
 With Sprytile installed and setup, let's start a new Blender file by going to `File > New > General`.
 
 In Blender 2.9, Sprytile shows up in the `Toolbar` to the **left** of the viewport, and in the `Sidebar` to the **right**.
 
-If you don't see the toolbar on the left press the `T` key to show the tools, and if there are no panels on the right press the `N` key. You can also toggle them through the `View` menu.
+If you don't see the toolbar on the left press ==**`T`**  to show the tools==, and if there are no panels on the right press ==**`N`** to show the sidebar==. You can also toggle them through the `View` menu.
 
 ![Toolbar and Sidebar](img/toolbar-sidebar.png)
 
@@ -58,9 +62,9 @@ Before using Sprytile tools, there are a couple of things to setup.
 
     ![Viewport Setup](img/viewport-setup.png)
 
-## Sprytile Tools
+---
 
-The majority of Sprytile's tools are accessed under `Edit Mode`. Select the default Blender cube, and enter edit mode by pressing the `Tab` key.
+Most of Sprytile's tools are accessed under `Edit Mode`. Select the default Blender cube, and enter edit mode by pressing the `Tab` key.
 
 ![Sprytile Edit Tools](img/sprytile-edit-tools.png)
 
@@ -92,7 +96,7 @@ While in the build tool, try rotating the 3D view camera around. Hold down the m
 
 Notice that a grid appears around the blender 3D cursor. This is called the ==work plane== and indicates the plane that you'll be placing tiles onto.
 
-By default, the work plane appears when the view camera is panned. If it does not, [check the settings](/advanced-features/#work-plane-cursor).
+By default, the work plane appears when the view camera is panned. If it does not show up, [check the settings](/advanced-features/#work-plane-cursor).
 
 Tilt the camera downwards so that the work plane is aligned to the ground.
 
@@ -114,26 +118,26 @@ Try reorienting the 3D view to face the last axis you have yet to paint on, then
 
 ### Tile Grids
 
-With the basics of building done, let's look at tile grids. Tilesets might be made up of tiles in different scales. To account for this, Sprytile allows you to paint tiles in different sizes. This part of the Sprytile panel allows you to create and organize the grid settings used with the tile map.
+With the basics of building done, let's look at tile grids. Tilesets might be made up of tiles in different sizes. Sprytile uses the concepts of tile grids to allow for this. This part of the Sprytile panel allows you to create and organize the grid settings used with the tile map.
 
-Press the `+` button at the panel and select the newly created entry. The settings for this new tile grid can be changed in the boxes below. For this tile grid, lets change it to a 16 x 16 tile size.
+Press the `+` button at the panel and select the newly created entry. The settings for this new tile grid can be changed in the boxes below. For the new grid, lets change it to a 16 x 16 tile size.
 
 ![Tile Grid Panel](img/tile-grid-panel.png)
 ![Tile Grid Editing](img/tile-grid-edit.png)
 
 ## Fill Tool
 
-Looking closely at the last wall we created, we can see that the texture gets very repetitive. We'll use the smaller 16x16 tile grid we just made to break up the pattern.
+Looking closely at the last wall we created, the texture repetition is obvious. We'll use the smaller 16x16 tile grid we just made to break up the pattern.
 
 Exit the build tool if you haven't done so yet, and delete the faces of wall we just created.
 
-??? info "For Blender Newbies"
+??? question "For Blender Newbies"
 
     To delete faces in Blender, go into the tweak/select tool by pressing `W`. Go into face mode by pressing the `3` key. Select the faces and delete them by pressing either `X` or `Del`, and then choosing faces.
 
     Bonus tip: holding down `shift` adds or removes to your selection. Holding `ctrl` will select the shortest path from your last selection to the new selection. Blender has powerful selection options worth exploring yourself.
 
-To recreate the wall, we'll use the Sprytile fill tool. Select the fill tool from the toolbar, making sure the 16x16 grid is selected. The workplane has become bigger, indicating the area the tool will fill.
+To recreate the wall, we'll use the Sprytile fill tool. Select the fill tool from the toolbar, making sure the 16x16 grid is selected. The workplane has become bigger, showing the area the tool will fill.
 
 ![Fill Tool](img/tool-fill.png)
 
@@ -149,21 +153,13 @@ Set cursor snap to grid, and then hold down the `S` key to move the work plane w
 
 ![Fill Tool](img/fill-tool-1.gif)
 
-## Paint Tool
+## Tile Flipping/Rotation
 
-### Tile Flipping/Rotation ###
+To address the obvious tiling on the wall we can go back to the build tool and paint over the wall, but this time using tile rotations and flipping to break up the pattern.
 
+![Wall Small Tiles](img/wall-flip-rotate.png)
 
-
-![Wall Small Tiles](img/wall-small-tiles.png)
-
-But even with the smaller tiles, the repetition is still visible. With tile map editors, you can further break up the patterns by rotating and flipping tiles. To do that, we use this part of the Sprytile panel.
-
-![Flip/Rotate Panel](img/flip-rotate.png)
-
-The keyboard shortcuts for rotating tiles left and right are the `1` and `2` keys.
-
-The `3` key toggles Flip X and the `4` key toggles Flip Y.
+The highlighted part of the Sprytile panel will rotate or flip tiles when you paint. You can use the keyboard shortcuts ==`Q`/`E` to rotate the tiles== to the left or right. ==Shift + `Q`/`E` will flip the tiles== vertically or horizontally.
 
 Repaint the wall using the tile flipping and rotation options.
 
@@ -171,76 +167,51 @@ Repaint the wall using the tile flipping and rotation options.
 
     You can pick tiles from your scene like in Photoshop. Hold down the `alt` key and select a tile from the scene with a left mouse click.
 
-![Wall with tile rotations](img/wall-tile-rotation.png)
-
-## Pixel Translate ##
-
-This wall is placed in an awkward position. Sprytile makes moving faces easier in tile map mode by constraining movement to the pixel grid. Select the wall faces and split them by pressing the `Y` key. Now translate the selection by pressing the `G` key. The movement snaps to the pixel grid and a readout showing the movement is shown on the top left corner.
-
-!!! info "Build Mode Automerge"
-
-    It's necessary to split the faces because build mode automatically merges close vertices by default. You can turn off this option by toggling `Auto Merge` beneath the tile rotation/flip section.
-
-![Pixel Rotation](img/pixel-translation.png)
-
-Use the pixel translation tool to move the wall to a more sensible place. The movement is restricted along the work plane, so rotate the 3D view when necessary. Pixel translate is automatically used when in tile map mode.
-
-![Moving the wall](img/wall-move.png)
-
-!!! note "Snap Translate Vertices"
-
-    By default, pixel translate will snap the selected vertices to the pixel grid around the 3D cursor. This can be turned off using the `Snap Translate` option in the Workflow panel.
-
 ## Paint Mode ##
 
 Finally, we'll cover paint mode. Paint mode gives you tools to quickly UV map faces to tiles, allowing you to build your mesh with other Blender tools. Let's extrude the edges of the grass without using tile map mode so that the geometry isn't on the pixel grid anymore.
 
 ![Mesh Extrude](img/mesh-extrude.gif)
 
-Next, turn on paint mode by pressing the `Paint` button in the Sprytile panel. Using the 32x32 tile grid, select the tile that is the border of the grass and the ground.
+Next, use the Sprytile Paint tool and with the 32x32 tile grid, select the tile that is the border of the grass and the ground and paint onto the new edge we created.
 
-![Paint Mode Selected](img/paint-mode-select.png)
+![Paint Tool](img/tool-paint.png)
 
-Now try painting the tile on one of the extruded faces. The texture appears stretched because of the current paint settings.
+The texture appears stretched because of the current paint settings. We can correct this by using these settings in the Sprytile tool panel. These options only appear for Paint mode.
 
-![Paint Mode Misalign](img/paint-mode-misalign.png)
+![Paint Settings](img/paint-settings.png)
 
-Change the paint settings to the following and try painting the faces again.
+Paint mode is dependent on the angle of your viewport. Try to rotate the camera so you're facing the front of the mesh you're painting on. 
 
-![Paint Settings](img/paint-settings.jpg)
-
-Now the grass/ground boundary appears because UV mapping of the face is being aligned to the top of the tile. Continue painting the other extruded faces.
-
-![UV Aligned Painting](img/paint-aligned.png)
+![Painting View Rotation](img/paint-tool-rotation.gif)
 
 ### Advanced Painting ###
 
-Paint mode allows for easy UV mapping even when the face is not aligned to the global XYZ axis. Using the create tab, make a low poly
-cylinder and rotate it so it is not aligned to the global XYZ axis.
+Paint mode allows for easy UV mapping even when the face is not aligned to the global XYZ axis.
 
-![Create Tab](img/create-tab.png)
+Create a low poly cylinder and rotate it so it is not aligned to the global XYZ axis.
 
-Switch to the 16x16 tile grid and select the following tile. Make sure that grid rotation is back at 0 and that Flip X and Y are off.
+![Create Tab](img/create-cylinder.gif)
 
-![Cylinder Creation](img/create-cylinder.png)
+??? info "For Blender Newbies"
 
-If you try painting the outer faces of the cylinder, you will notice that the alignment of the UV is not correct. To fix this, we can use hinting mode. Toggle on hinting in the Sprytile panel.
+    Pressing `Shift+A` will bring up the add object menu. Choose cylinder, and set sensible settings for the cylinder.
 
-![Hinting Toggle](img/hinting-toggle.png)
+    Move objects by pressing `G` and moving your mouse, and pressing `R` will rotate objects. 
 
-Switch to edge selection mode and select one of the cylinder's edges along the long side. Then paint on the faces connected to the selected edge and notice that the UV mapping is now properly aligned to the face.
+Switch to the 16x16 tile grid and select orange metallic tile. Try to paint the sides of the cylinder. It may be difficult to be consistent because of the rotation of the cylinder.
 
-![Hinted Painting](img/hinted-painting.gif)
+![Cylinder Painting](img/paint-cylinder.gif)
 
-What hinting does is indicate to Sprytile which side of the face will be aligned to the horizontal axis of the tile map.
+Switch to edge selection mode and select one of the cylinder's edges along the long side. In Sprytile's setting panel, turn on hinting and then try painting the cylinder again.
 
-The cylinder still doesn't look like our selected tile. To fix this, we can use the stretch options on the paint tool.
+![Edge Hinting Setting](img/edge-hint-setting.png)
 
-![Stretch Options](img/stretch-options.png)
+Paint on the sides of the cylinder again, and now the paint direction is consistent.
 
-With the stretch options on, repeat painting the faces as with the previous step. Now the faces will be UV mapped with the selected tile stretched out over each face, looking more like the metallic pipe of the selected tile.
+![Hinted Painting](img/paint-hinting.gif)
 
-![Pipe Cylinder](img/pipe-cylinder.png)
+Hinting indicates to sprytile which side of the painted face should be considered the bottom of the face.
 
 ## Conclusion ##
 
@@ -248,4 +219,4 @@ This tutorial gives an overview of Sprytile's basic functions, hopefully enough 
 
 For more advanced uses of Sprytile, check the [Advanced Features](advanced-features) tutorial page.
 
-If you have any questions, feel free to contact me on [twitter](https://twitter.com/chemikhazi) or via the [itch.io discussion boards](https://chemikhazi.itch.io/sprytile/community).
+If you have any questions, feel free to contact me on [twitter](https://twitter.com/jeielvtx) or via the [itch.io discussion boards](https://chemikhazi.itch.io/sprytile/community).

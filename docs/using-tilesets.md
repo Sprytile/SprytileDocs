@@ -1,10 +1,10 @@
 # Using Existing Tilesets
 
-By using [tilegrid settings](advanced-features#additional-tile-grid-settings), Sprytile can use existing 2D tilesets assets but some care should be taken in how you use them.
+By using [tilegrid settings](/advanced-features#additional-tile-grid-settings), Sprytile can use existing 2D tilesets assets but some care should be taken in how you use them.
 
 ## Power of Two Texture Sizes
 
-The importance of Power of Two texture sizes is discussed in detail in [creating tilesets](creating-tilesets#power-of-two-sizes).
+The importance of Power of Two texture sizes is discussed in detail in [creating tilesets](/creating-tilesets#power-of-two-sizes).
 
 If you wish to use your scenes in a game engine, you will likely need to resize the tileset you want to use so that it is a power of two size.
 
