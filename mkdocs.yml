@@ -1,4 +1,4 @@
-site_name: Sprytile Docs
+site_name: Sprytile Documentation
 site_description: A tile map editor for Blender
 site_author: Jeiel Aranal
 site_url: http://docs.sprytile.xyz
@@ -54,9 +54,12 @@ markdown_extensions:
   - markdown.extensions.meta
   - markdown.extensions.footnotes
   - markdown.extensions.meta
+  - pymdownx.tabbed
   - pymdownx.betterem:
       smart_enable: all
   - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:pymdownx.emoji.to_svg

@@ -1,14 +1,13 @@
 # Keyboard Shortcuts
 
-| Key  										| Action  								|
-|:-:										|:--									|
-|   **1**									| Rotate tile left  					|
-|   **2**									| Rotate tile right  					|
-|  	**3** 									| Flip tile horizontally  				|
-|  	**4** 									| Flip tile vertically  				|
-|  	**W** 									| Center viewport on cursor  			|
-|  	**S** 									| Snap cursor to mouse. Snapping location will depend on cursor snap mode 		|
-|  	**Shift, while holding S** 				| Toggle cursor snap mode. The cursor snaps towards the mouse, either to the nearest vertex or the nearest world grid coordinate   		|
-| **Mousewheel up/down, while holding S**  	| Move cursor towards to or away from camera   							|
-| **Alt + Left Mouse, while over mesh**  	| Eyedrop select tile from mesh. Configurable in Sprytile settings		|
-| **Ctrl, in tile palette**  				| Move tile selection in palette. Configurable in Sprytile settings  			|
+| Key  									| Action  								|
+|:-:									|:--									|
+| Mouse in tile palette<br/>**Shift + Middle Mouse** | **Move tile palette** around viewport |
+| **Q / E**								    | Rotate tile left/right  			    |
+| **Shift + Q / E** 						| Flip tile horizontally/vertically     |
+| Mouse over mesh<br/>**Alt + Left Mouse**  | Pick tile selection from face         |
+| **Hold S**        | Snap cursor to mouse.<br/>Snapping location will depend on cursor snap mode 		|
+| **Hold S + Ctrl** | Toggle cursor snap mode between vertex and grid |
+| **Hold S + Alt**  | Set work plane normal to face under mouse.<br/>Alternately, **press N** |
+| **Hold S + Mouse Wheel** | Move cursor on work plane normal, by half grid steps.<br/>Hold `Shift` to move by 1 pixel |
+| Mouse in tile palette<br/>**Ctrl + Mouse Wheel** | Change tile grid<br/>Alternatively, right click on tile palette	|
