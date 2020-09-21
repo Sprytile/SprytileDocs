@@ -15,9 +15,9 @@ theme:
 nav:
 - Home: index.md
 - Quick Start: quick-start.md
-- Advanced Features: advanced-features.md
+- Feature Reference: feature-reference.md
 - Keyboard Shortcuts: shortcuts.md
-- References:
+- Guides:
   - Creating Tilesets: creating-tilesets.md
   - Using Tilesets: using-tilesets.md
   - Sketchfab Export: sketchfab.md

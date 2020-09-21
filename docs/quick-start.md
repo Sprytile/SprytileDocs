@@ -217,6 +217,6 @@ Hinting indicates to sprytile which side of the painted face should be considere
 
 This tutorial gives an overview of Sprytile's basic functions, hopefully enough to help you to build cool things with it.
 
-For more advanced uses of Sprytile, check the [Advanced Features](advanced-features) tutorial page.
+For more advanced uses of Sprytile, check the [Advanced Features](/advanced-features) tutorial page.
 
 If you have any questions, feel free to contact me on [twitter](https://twitter.com/jeielvtx) or via the [itch.io discussion boards](https://chemikhazi.itch.io/sprytile/community).

@@ -22,4 +22,4 @@ If you wish to find out more about the technical details of power of two texture
 
 ## High Resolution Tilesets
 
-While theoretically possible, high resolution tiles sets have not been tested yet. There is a high likelihood that you will need to use [advanced tile grid settings](advanced-features/#additional-tile-grid-settings) and use padding to [avoid texture bleeding](https://itch.io/t/72048/suggestion-for-accomodating-bleeding-fix).
+While theoretically possible, high resolution tiles sets have not been tested yet. There is a high likelihood that you will need to use [advanced tile grid settings](/advanced-features/#additional-tile-grid-settings) and use padding to [avoid texture bleeding](https://itch.io/t/72048/suggestion-for-accomodating-bleeding-fix).

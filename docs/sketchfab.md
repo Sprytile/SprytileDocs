@@ -1,5 +1,7 @@
 # Exporting for Sketchfab
 
+Sketchfab is an online service that allows you to showcase your 3D work inside a browser. There is a collection of [models made with Sprytile](https://sketchfab.com/ZeroByte/collections/made-with-sprytile) that I curate on Sketchfab.
+
 These are settings I've found to be a good base for making your low poly pixel art texture models look good in [Sketchfab](https://sketchfab.com/). Think of this as a base, there are additional ways to make presenting your models more eye catching in Sketchfab!
 
 ## Power of Two Textures
@@ -10,33 +12,25 @@ The technology used by Sketchfab to display models is sensitive to sizes and non
 
 There are workarounds to this limitation if necessary, but it will always result in some artifacts.
 
-## Export To Sketchfab
+## Upload to Sketchfab
 
-Sketchfab has an exporter for Blender that can easily upload your work from inside Blender.
-
-Just [install the Blender exporter](https://sketchfab.com/exporters/blender) and [follow the export tutorial](https://blog.sketchfab.com/guest-post-blender-to-sketchfab-tutorial/).
+Sketchfab will accept Blender files as uploads from their web interface.
 
 ## Sketchfab 3D Settings
 
 Once you've exported your model from Blender to Sketchfab, go to the sketchfab website in your browser and edit the 3D settings for your model.
 
+First, set the renderer type to `PBR`, and shading to `Shadeless`.
+
 ![Sketchfab Settings](img/sketchfab-settings.png)
 
-First, set the renderer and shading type to Classic and Shadeless respectively.
+Next, go to the Materials tab, and in the PBR Maps settings expand the Base Color dropdown to get to texture settings. Set filtering to `Nearest`, format to `RGB`, and both wrap settings to `Repeat`
 
-![Sketchfab Rendering](img/sketchfab-renderer.jpg)
+![Sketchfab Diffuse](img/sketchfab-texture.png)
 
-Next, go to the Materials tab, and in the diffuse settings expand the dropdown to get to texture settings. Set filtering to `Nearest`, format to `RGB`, and both wrap settings to `Repeat`
+Next, scroll down to the **Opacity** settings and turn it on. Set it to `Mask` and turn the slider up to 1. Expand the textures again and make sure the filter, format, and wrap settings are correct.
 
-![Sketchfab Diffuse](img/sketchfab-diffuse.jpg)
-
-Next, scroll down to the transparency settings and set it to `Blending`, with the slider turned all the way down to zero.
-
-![Sketchfab Transparency](img/sketchfab-transparency.jpg)
-
-And finally, expand the dropdown in the transparency to get to the alpha texture settings. Set filtering to `Nearest`, the format to `Alpha`, and both wrap settings to `Repeat`
-
-![Sketchfab Alpha](img/sketchfab-alpha.jpg)
+![Sketchfab Transparency](img/sketchfab-opacity.png)
 
 ---
 
