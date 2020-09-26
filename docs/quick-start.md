@@ -64,7 +64,7 @@ Before using Sprytile tools, there are a couple of things to setup.
 
 ---
 
-Most of Sprytile's tools are accessed under `Edit Mode`. Select the default Blender cube, and enter edit mode by pressing the `Tab` key.
+Most of Sprytile's tools are accessed under `Edit Mode` of a **mesh object**. Select the default Blender cube, and enter edit mode by pressing the `Tab` key.
 
 ![Sprytile Edit Tools](img/sprytile-edit-tools.png)
 
@@ -112,7 +112,7 @@ Since the 3D cursor is an important part of the Sprytile workflow, you can ==mov
 
 ![Cursor Snap](img/cursor-snap.gif)
 
-Try reorienting the 3D view to face the last axis you have yet to paint on, then moving the 3D cursor by holding down the `S` key and moving your mouse. Paint on that axis. Note that the center of the grid has moved to where you have positioned the cursor.
+Try facing the 3D view to the last axis you have yet to build on, then moving the 3D cursor by holding down the `S` key and moving your mouse. Paint on that axis. Note that the center of the grid has moved to where you have positioned the cursor.
 
 ![Paint X-Axis](img/paint-3.gif)
 
@@ -133,11 +133,15 @@ Exit the build tool if you haven't done so yet, and delete the faces of wall we 
 
 ??? question "For Blender Newbies"
 
-    To delete faces in Blender, go into the tweak/select tool by pressing `W`. Go into face mode by pressing the `3` key. Select the faces and delete them by pressing either `X` or `Del`, and then choosing faces.
+    To delete faces in Blender, go into the tweak/select tool by pressing `W`.
+    
+    Go into face mode by pressing the `3` key. Select the faces to be deleted.
+    
+    Delete them by pressing either `X` or `Del`, and then choosing faces in the menu that appears.
 
-    Bonus tip: holding down `shift` adds or removes to your selection. Holding `ctrl` will select the shortest path from your last selection to the new selection. Blender has powerful selection options worth exploring yourself.
+    Bonus tip: holding `shift` adds or removes to your selection. Holding `ctrl` will select the shortest path from your last selection to the new selection. Blender has powerful selection options worth exploring yourself.
 
-To recreate the wall, we'll use the Sprytile fill tool. Select the fill tool from the toolbar, making sure the 16x16 grid is selected. The workplane has become bigger, showing the area the tool will fill.
+To recreate the wall, we'll use the Sprytile fill tool. Select the fill tool from the toolbar, making sure the 16x16 grid is selected. The work plane has become bigger, showing the area the tool will fill.
 
 ![Fill Tool](img/tool-fill.png)
 
@@ -165,7 +169,7 @@ Repaint the wall using the tile flipping and rotation options.
 
 !!! info "Tile Picker"
 
-    You can pick tiles from your scene like in Photoshop. Hold down the `alt` key and select a tile from the scene with a left mouse click.
+    You can pick tiles from your scene like in Photoshop. Hold down the `Alt` key and select a tile from the scene with a left mouse click.
 
 ## Paint Mode ##
 
@@ -181,7 +185,7 @@ The texture appears stretched because of the current paint settings. We can corr
 
 ![Paint Settings](img/paint-settings.png)
 
-Paint mode is dependent on the angle of your viewport. Try to rotate the camera so you're facing the front of the mesh you're painting on. 
+Paint mode is dependent on the angle of your viewport. Try to rotate the camera so you're facing the front of the face you're painting on. 
 
 ![Painting View Rotation](img/paint-tool-rotation.gif)
 
@@ -205,18 +209,31 @@ Switch to the 16x16 tile grid and select orange metallic tile. Try to paint the 
 
 Switch to edge selection mode and select one of the cylinder's edges along the long side. In Sprytile's setting panel, turn on hinting and then try painting the cylinder again.
 
+??? info "For Blender Newbies"
+
+    Inside the mesh edit mode, you can switch between 3 different subobject selection modes: Vertex, Edge, and Face.
+
+    These are the components of a mesh. You can switch between them in this part of the viewport, or by pressing the `1` (Vertex), `2` (Edge), or `3` (Face) keys.
+
+    ![Mesh Sub Modes](img/blender_mesh_submode.png)
+
 ![Edge Hinting Setting](img/edge-hint-setting.png)
 
 Paint on the sides of the cylinder again, and now the paint direction is consistent.
 
 ![Hinted Painting](img/paint-hinting.gif)
 
-Hinting indicates to sprytile which side of the painted face should be considered the bottom of the face.
+Hinting tells Sprytile which side of the painted face should be considered the bottom side of the tile.
 
 ## Conclusion ##
 
-This tutorial gives an overview of Sprytile's basic functions, hopefully enough to help you to build cool things with it.
-
-For more advanced uses of Sprytile, check the [Advanced Features](/advanced-features) tutorial page.
+This tutorial gives an overview of Sprytile's basic functions, hopefully enough to help you to start building cool things with it.
 
 If you have any questions, feel free to contact me on [twitter](https://twitter.com/jeielvtx) or via the [itch.io discussion boards](https://chemikhazi.itch.io/sprytile/community).
+
+### Additional Tutorials
+
+Here are some video tutorials that cover Sprytile or low poly pixel modeling inside Blender 2.8+
+
+- [Games From Scratch, Sprytile 0.5 Tutorial](https://www.youtube.com/watch?v=pBHp7FlDWgw)
+- [Mort Low Poly Pixel Workflow (some Sprytile)](https://www.youtube.com/watch?v=RQVAUaSUP-k)

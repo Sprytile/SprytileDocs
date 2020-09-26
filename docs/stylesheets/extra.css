@@ -1,3 +1,36 @@
 .md-header {background-color: #875962 !important; font-weight: bold; }
+.md-typeset h1, .md-typeset h2
+{
+    font-weight: bold;
+    color: #875962;
+}
+.md-typeset h2
+{
+    text-decoration: underline;
+}
+.md-typeset h3, .md-typeset h4, .md-typeset h5, .md-typeset h6 {color: black}
 .md-typeset a { color: #875962 !important; }
 .md-nav--secondary {border-left: .4rem solid #875962 !important;}
+
+.md-typeset .abstract>.admonition-title::before,
+.md-typeset .example>.admonition-title::before,
+.md-typeset .info>.admonition-title::before,
+.md-typeset .note>.admonition-title::before,
+.md-typeset .question>.admonition-title::before,
+.md-typeset .summary>.admonition-title::before,
+.md-typeset .tldr>.admonition-title::before,
+.md-typeset .abstract>summary::before,
+.md-typeset .example>summary::before,
+.md-typeset .info>summary::before,
+.md-typeset .note>summary::before,
+.md-typeset .question>summary::before,
+.md-typeset .summary>summary::before,
+.md-typeset .tldr>summary::before
+{
+    background-color: #1fa964 !important;
+}
+
+.md-typeset .admonition, .md-typeset details
+{
+    border-left-color: #1fa964 !important;
+}
