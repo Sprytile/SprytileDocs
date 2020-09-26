@@ -8,17 +8,18 @@ This site will guide you through the basic usage, and introduce some of the adva
 
 ## 🎓 Tutorials
 
-New to Sprytile? Dive in with the [Quick Start](quick-start.md) tutorial.
-
-Got the basics? Move onwards to the [Advanced Features](advanced-features.md) tutorial.
+New to Sprytile? Dive in with the written [Quick Start](quick-start.md) tutorial.
 
 ## 📚 References 
+
+Reference page for [Sprytile's features](feature-reference.md).
+
+Work faster by using [Keyboard Shortcuts](shortcuts.md).
 
 ### Tilesets
 * [Creating Tilesets](creating-tilesets.md)
 * [Using Tilesets](using-tilesets.md)
 
 ### Software Guides
-* [Keyboard Shortcuts](shortcuts.md)
 * [Sketchfab Export](sketchfab.md)
 * [Unity Settings](unity-settings.md)
