@@ -1,72 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-    
-    <url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
      <loc>http://docs.sprytile.xyz/</loc>
-     <lastmod>2018-08-27</lastmod>
+     <lastmod>2020-09-26</lastmod>
      <changefreq>daily</changefreq>
-    </url>
-    
-
-    
-    <url>
+    </url><url>
      <loc>http://docs.sprytile.xyz/quick-start/</loc>
-     <lastmod>2018-08-27</lastmod>
+     <lastmod>2020-09-26</lastmod>
      <changefreq>daily</changefreq>
-    </url>
-    
-
-    
-    <url>
-     <loc>http://docs.sprytile.xyz/advanced-features/</loc>
-     <lastmod>2018-08-27</lastmod>
+    </url><url>
+     <loc>http://docs.sprytile.xyz/feature-reference/</loc>
+     <lastmod>2020-09-26</lastmod>
      <changefreq>daily</changefreq>
-    </url>
-    
-
-    
-    <url>
-     <loc>http://docs.sprytile.xyz/updating-sprytile/</loc>
-     <lastmod>2018-08-27</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    
-
-    
-    <url>
+    </url><url>
      <loc>http://docs.sprytile.xyz/shortcuts/</loc>
-     <lastmod>2018-08-27</lastmod>
+     <lastmod>2020-09-26</lastmod>
      <changefreq>daily</changefreq>
-    </url>
-    
-
-    
-        
-    <url>
+    </url><url>
      <loc>http://docs.sprytile.xyz/creating-tilesets/</loc>
-     <lastmod>2018-08-27</lastmod>
+     <lastmod>2020-09-26</lastmod>
      <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
+    </url><url>
      <loc>http://docs.sprytile.xyz/using-tilesets/</loc>
-     <lastmod>2018-08-27</lastmod>
+     <lastmod>2020-09-26</lastmod>
      <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
+    </url><url>
      <loc>http://docs.sprytile.xyz/sketchfab/</loc>
-     <lastmod>2018-08-27</lastmod>
+     <lastmod>2020-09-26</lastmod>
      <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
+    </url><url>
      <loc>http://docs.sprytile.xyz/unity-settings/</loc>
-     <lastmod>2018-08-27</lastmod>
+     <lastmod>2020-09-26</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
-    
-
 </urlset>
