@@ -8,7 +8,7 @@ This site will guide you through the basic usage, and introduce some of the adva
 
 ## 🎓 Tutorials
 
-New to Sprytile? Dive in with the written [Quick Start](quick-start.md) tutorial.
+New to Sprytile? Dive in with the [Quick Start](quick-start.md) tutorial.
 
 ## 📚 References 
 

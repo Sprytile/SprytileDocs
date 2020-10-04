@@ -11,6 +11,8 @@ We'll be using the following tile set image for this tutorial, but feel free to 
     [![tileset.png](img/tileset.png)<br/>*Click to download*](img/tileset.png)
     </div>
 
+<iframe style="margin: 0 auto; display: block" width="560" height="315" src="https://www.youtube.com/embed/-GWvYamwKRI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Installation
 
 Download the zip file from the [itch.io page](https://chemikhazi.itch.io/sprytile). Sprytile can be downloaded for free, but donations are very much appreciated.
