@@ -76,7 +76,7 @@ The build tool creates faces that are UV mapped to the selected tiles. Open Spry
 
 ![Sprytile Build Tool](img/tool-build.png)
 
-If the palette is hidden by the toolbar, ==move the tile palette== by putting your mouse in the tile palette and holding the **shift key**. The scroll wheel ==zooms the palette in and out==.
+If the palette is hidden by the toolbar, ==move the tile palette== by putting your mouse in the tile palette, holding the **shift key**, and **middle mouse dragging** the tile palette. The scroll wheel ==zooms the palette in and out==.
 
 ![Arranging the Tile Palette](img/tool-palette-arrange.gif)
 
