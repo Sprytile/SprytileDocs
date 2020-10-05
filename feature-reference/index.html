@@ -245,6 +245,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#tile-palette" class="md-nav__link">
+    Tile Palette
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#main-panel" class="md-nav__link">
     Main Panel
   </a>
@@ -287,6 +294,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#1x1-tile-grids" class="md-nav__link">
+    1x1 Tile Grids
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#extra-grid-settings" class="md-nav__link">
     Extra Grid Settings
   </a>
@@ -327,9 +341,43 @@
   
 </li>
         
-          <li class="md-nav__item">
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#sprytile-utilities" class="md-nav__link">
     Sprytile Utilities
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preferences" class="md-nav__link">
+    Preferences
+  </a>
+  
+    <nav class="md-nav" aria-label="Preferences">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#default-settings" class="md-nav__link">
+    Default Settings
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#on-load-tileset" class="md-nav__link">
+    On Load Tileset
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#on-sprytile-edit" class="md-nav__link">
+    On Sprytile Edit
   </a>
   
 </li>
@@ -456,6 +504,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#tile-palette" class="md-nav__link">
+    Tile Palette
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#main-panel" class="md-nav__link">
     Main Panel
   </a>
@@ -498,6 +553,13 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#1x1-tile-grids" class="md-nav__link">
+    1x1 Tile Grids
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#extra-grid-settings" class="md-nav__link">
     Extra Grid Settings
   </a>
@@ -538,9 +600,43 @@
   
 </li>
         
-          <li class="md-nav__item">
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#sprytile-utilities" class="md-nav__link">
     Sprytile Utilities
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preferences" class="md-nav__link">
+    Preferences
+  </a>
+  
+    <nav class="md-nav" aria-label="Preferences">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#default-settings" class="md-nav__link">
+    Default Settings
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#on-load-tileset" class="md-nav__link">
+    On Load Tileset
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#on-sprytile-edit" class="md-nav__link">
+    On Sprytile Edit
   </a>
   
 </li>
@@ -565,6 +661,11 @@
                 
                 <h1 id="feature-references">Feature References</h1>
 <p>This page explains the settings and tools for working with Sprytile.</p>
+<h2 id="tile-palette">Tile Palette</h2>
+<p>The tile palette appears in the viewport when Sprytile tools are in use. This lets you select the tiles Sprytile will build or paint into Blender.</p>
+<p><strong>Hold shift + Middle Mouse</strong> drag to move the palette around the viewport.</p>
+<p><strong>Scroll Wheel</strong> zooms the tile palette.</p>
+<p><strong>Ctrl + Scroll Wheel</strong> switches between tile grids.</p>
 <h2 id="main-panel">Main Panel</h2>
 <p><img alt="Main Sprytile Panel" src="../img/panel-sprytile-main.png" /></p>
 <p>This panel contains the main controls for Sprytile's tools. When you're using the tool modes or adjusting tile grids, this is the panel you'll most likely be interacting with.</p>
@@ -631,6 +732,9 @@
 <h2 id="grid-settings">Grid Settings</h2>
 <p><img alt="Grid Settings" src="../img/panel-grid-settings.png" /></p>
 <p>This is where you can create additional tile grids, or add new tilesets</p>
+<details class="abstract"><summary>Special Grid Types</summary><h3 id="1x1-tile-grids">1x1 Tile Grids</h3>
+<p>Creating a 1x1 tile grid allows the most flexibility when using Sprytile, allowing you to freely select any part of your texture for use with Sprytile's tools.</p>
+</details>
 <details class="abstract"><summary>Grid Settings Details</summary><p><img alt="Grid Tools" src="../img/panel-grid-options.png" /></p>
 <p>Tile grids can be named in the left part of the grid selection list, to help with organizing grids.</p>
 <p>Pressing the <code>+</code> button will duplicate the currently selected grid, and the size can then be adjusted using the <code>Grid Size</code> input.</p>
@@ -661,12 +765,34 @@
 <p>When Sprytile is installed in 2.9, this toggle is available to quickly turn it on and off.</p>
 <h3 id="image-reload">Image Reload</h3>
 <p>Pressing the <code>Reload All Images</code> will reload all images that are used by your scene, allowing you to quickly refresh textures after editing them in an external program. Toggling on <code>Auto</code> will automatically refresh the textures every second.</p>
-<h3 id="sprytile-utilities">Sprytile Utilities</h3>
-<p>This menu contains some tools that might be useful.</p>
+</details>
+<h2 id="sprytile-utilities">Sprytile Utilities</h2>
+<p><img alt="Sprytile Utilities Menu" src="../img/Sprytile_Utils.png" /></p>
+<p>This menu contains some helpful tools for Sprytile's workflow. This is available in Sprytile's panel under Object and Edit mode.</p>
+<details class="abstract"><summary>Utility Details</summary><p><strong>Reset Sprytile</strong> - If Sprytile breaks, it might be necessary to use this.</p>
+<p><strong>Floor Grid To Pixels</strong> - Set Blender's grid subdivision to the world pixel density, useful for making Blender's incremental snap to one pixel.</p>
+<p><strong>Setup Pixel Texture</strong> - Give textures the crunchy pixel art look.</p>
+<p><strong>Setup Pixel VIewport</strong> - Blender's default viewport renderer has a slight color tint, for a more cinematic look. If you're only going to do shadeless rendering, this will remove the tint.</p>
+<p><strong>Set Material to Shadeless</strong> - Convert a material to a shadeless look node network, for pixel art styles. Sprytile uses this when loading tilesets.</p>
+<p><strong>New Shadeless Material</strong> - Create a new shadeless material</p>
 <p><strong>Make Double Sided</strong> - If your model will be used in a context where a double sided material is not possible or will not be used, this will duplicate and flip the normals of selected faces.</p>
 <p>Recommended only as a finishing step, because it can make editing your model unweildy.</p>
-<p><strong>Reset Sprytile</strong> - If Sprytile breaks, it might be necessary to use this.</p>
 <p><strong>Remove Sprytile Data</strong> - Remove any Sprytile data from your blend file, in case tools are not compatible with the data.</p>
+</details>
+<h2 id="preferences">Preferences</h2>
+<p>Sprytile's prefrences can be accessed through Blender's <code>Preferences&gt;Add-ons</code> window, and searching for Sprytile.</p>
+<p><img alt="Enable Addon" src="../img/enable-addon.png" /></p>
+<details class="abstract"><summary>Preference Details</summary><h3 id="default-settings">Default Settings</h3>
+<p>These are settings Sprytile will use when starting a new scene.</p>
+<p><strong>Pixel Density</strong> - Number of pixels per Blender unit</p>
+<p><strong>Grid Size</strong> - Default tilegrid size</p>
+<p><strong>Subpixel Padding</strong> - The <a href="#extra-grid-settings">pad offset value</a> to use, for helping with tile bleeding in engine.</p>
+<h3 id="on-load-tileset">On Load Tileset</h3>
+<p>Sprytile will run these utilities when a tileset is loaded.</p>
+<p><strong>Automatically Setup Grid</strong> - Change Blender grid subdivisions to follow world pixel density.</p>
+<p><strong>Automatically Setup Pixel Viewport</strong> - Blender's default viewport renderer has a slight color tint, for a more cinematic look. If you're only going to do shadeless rendering, this will remove the tint.</p>
+<h3 id="on-sprytile-edit">On Sprytile Edit</h3>
+<p><strong>Automatically swich viewport to Material Preview mode</strong> - automatically change Blender's viewport to show material, so that the texture shows.</p>
 </details>
                 
               
