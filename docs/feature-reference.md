@@ -2,6 +2,16 @@
 
 This page explains the settings and tools for working with Sprytile.
 
+## Tile Palette
+
+The tile palette appears in the viewport when Sprytile tools are in use. This lets you select the tiles Sprytile will build or paint into Blender.
+
+**Hold shift + Middle Mouse** drag to move the palette around the viewport.
+
+**Scroll Wheel** zooms the tile palette.
+
+**Ctrl + Scroll Wheel** switches between tile grids.
+
 ## Main Panel
 
 ![Main Sprytile Panel](img/panel-sprytile-main.png)
@@ -58,6 +68,12 @@ This panel contains the main controls for Sprytile's tools. When you're using th
 ![Grid Settings](img/panel-grid-settings.png)
 
 This is where you can create additional tile grids, or add new tilesets
+
+??? abstract "Special Grid Types"
+
+    ### 1x1 Tile Grids
+
+    Creating a 1x1 tile grid allows the most flexibility when using Sprytile, allowing you to freely select any part of your texture for use with Sprytile's tools.
 
 ??? abstract "Grid Settings Details"
 
@@ -121,14 +137,60 @@ This is where you can create additional tile grids, or add new tilesets
 
     Pressing the `Reload All Images` will reload all images that are used by your scene, allowing you to quickly refresh textures after editing them in an external program. Toggling on `Auto` will automatically refresh the textures every second.
 
-    ### Sprytile Utilities
+## Sprytile Utilities
 
-    This menu contains some tools that might be useful.
+
+![Sprytile Utilities Menu](img/Sprytile_Utils.png)
+
+
+This menu contains some helpful tools for Sprytile's workflow. This is available in Sprytile's panel under Object and Edit mode.
+
+??? abstract "Utility Details"
+
+    **Reset Sprytile** - If Sprytile breaks, it might be necessary to use this.
+
+    **Floor Grid To Pixels** - Set Blender's grid subdivision to the world pixel density, useful for making Blender's incremental snap to one pixel.
+
+    **Setup Pixel Texture** - Give textures the crunchy pixel art look.
+
+    **Setup Pixel VIewport** - Blender's default viewport renderer has a slight color tint, for a more cinematic look. If you're only going to do shadeless rendering, this will remove the tint.
+
+    **Set Material to Shadeless** - Convert a material to a shadeless look node network, for pixel art styles. Sprytile uses this when loading tilesets.
+
+    **New Shadeless Material** - Create a new shadeless material
 
     **Make Double Sided** - If your model will be used in a context where a double sided material is not possible or will not be used, this will duplicate and flip the normals of selected faces.
 
     Recommended only as a finishing step, because it can make editing your model unweildy.
 
-    **Reset Sprytile** - If Sprytile breaks, it might be necessary to use this.
-
     **Remove Sprytile Data** - Remove any Sprytile data from your blend file, in case tools are not compatible with the data.
+
+## Preferences
+
+Sprytile's prefrences can be accessed through Blender's `Preferences>Add-ons` window, and searching for Sprytile.
+
+![Enable Addon](img/enable-addon.png)
+
+??? abstract "Preference Details"
+
+    ### Default Settings
+
+    These are settings Sprytile will use when starting a new scene.
+
+    **Pixel Density** - Number of pixels per Blender unit
+    
+    **Grid Size** - Default tilegrid size
+
+    **Subpixel Padding** - The [pad offset value](#extra-grid-settings) to use, for helping with tile bleeding in engine.
+
+    ### On Load Tileset
+
+    Sprytile will run these utilities when a tileset is loaded.
+
+    **Automatically Setup Grid** - Change Blender grid subdivisions to follow world pixel density.
+
+    **Automatically Setup Pixel Viewport** - Blender's default viewport renderer has a slight color tint, for a more cinematic look. If you're only going to do shadeless rendering, this will remove the tint.
+
+    ### On Sprytile Edit
+
+    **Automatically swich viewport to Material Preview mode** - automatically change Blender's viewport to show material, so that the texture shows.
